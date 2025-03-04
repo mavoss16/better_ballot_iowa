@@ -1,0 +1,97 @@
+---
+title: "Iowa Active Voter Summary"
+execute:
+    echo: false
+    warning: false
+project:
+    type: website
+    output-dir: docs
+format: 
+    html:
+        embed-resources: true
+---
+
+``` {r}
+library(readr)
+
+library(sf)
+library(dplyr)
+library(reactable)
+library(gt)
+library(mapview)
+
+```
+
+
+```{r}
+sf_data <- read_rds("../clean_data/registrations_sf_summary.rds") |> 
+    select(
+        NAME, 
+        active_pct_2025, active_pct_2015, active_diff,
+        two_party_active_pct_2025, two_party_active_pct_2015, two_party_active_diff,
+        rep_active_pct_2025, rep_active_pct_2015, rep_active_diff,
+        dem_active_pct_2025, dem_active_pct_2015, dem_active_diff
+    )
+
+```
+
+
+:::{.column-page}
+
+#### Variables
+
+* active_pct: Number of active voters divided by total number of voters
+
+* two_party_active_pct: Sum of Republican active percent and Democratic active percent
+
+* rep_active_pct: Number of Republican active voters divided by total number of voters
+
+* dem_active_pct: Number of Democratic active voters divided by total number of voters
+
+#### Suffixes:
+
+* 2025: Data from January 2025
+
+* 2015: Data from January 2015
+
+* diff: Data from January 2025 minus data from January 2015
+
+
+```{r}
+gt(
+    sf_data |> 
+        st_drop_geometry()
+) |>
+    fmt_percent(contains("active"), decimals = 1) |>
+    opt_interactive(
+        page_size_default = 10,
+        page_size_values = c(10, 25, 50, 99),
+        use_page_size_select = TRUE,
+        use_search = TRUE
+    )
+
+```
+
+
+#### Active Voter Percentages (2025)
+
+Click a county to see all of a county's data.
+```{r}
+
+mapview(sf_data, zcol = "active_pct_2025")
+
+mapview(sf_data, zcol = "two_party_active_pct_2025")
+```
+
+
+#### Change in Active % from 2015 to 2025
+
+Negative values increase a percentage point decrease from 2015 to 2025. Click a county to see all of a county's data.
+```{r}
+
+mapview(sf_data, zcol = "active_diff")
+
+mapview(sf_data, zcol = "two_party_active_diff")
+```
+
+:::
