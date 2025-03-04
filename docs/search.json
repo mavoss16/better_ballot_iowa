@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "Voter Registration/explore_registrations.html",
+    "href": "Voter Registration/explore_registrations.html",
+    "title": "Iowa Voter Registration Summary",
+    "section": "",
+    "text": "Variables\n\nactive_pct: Number of active voters divided by total number of voters\ntwo_party_active_pct: Sum of Republican active percent and Democratic active percent\nrep_active_pct: Number of Republican active voters divided by total number of voters\ndem_active_pct: Number of Democratic active voters divided by total number of voters\n\n\n\nSuffixes:\n\n2025: Data from January 2025\n2015: Data from January 2015\ndiff: Data from January 2025 minus data from January 2015\n\n\n\n\n\n\n\n\n\n\n\n\nActive Voter Percentages (2025)\nClick a county to see all of a county’s data.\n\n\n\n\n\n\n\n\n\n\n\n\nChange in Active % from 2015 to 2025\nNegative values increase a percentage point decrease from 2015 to 2025. Click a county to see all of a county’s data."
+  },
+  {
+    "objectID": "active_voter_summary.html",
+    "href": "active_voter_summary.html",
+    "title": "Iowa Active Voter Summary",
+    "section": "",
+    "text": "Variables\n\nactive_pct: Number of active voters divided by total number of voters\ntwo_party_active_pct: Sum of Republican active percent and Democratic active percent\nrep_active_pct: Number of Republican active voters divided by total number of voters\ndem_active_pct: Number of Democratic active voters divided by total number of voters\n\n\n\nSuffixes:\n\n2025: Data from January 2025\n2015: Data from January 2015\ndiff: Data from January 2025 minus data from January 2015\n\n\n\n\n\n\n\n\n\n\n\n\nActive Voter Percentages (2025)\nClick a county to see all of a county’s data.\n\n\n\n\n\n\n\n\n\n\n\n\nChange in Active % from 2015 to 2025\nNegative values increase a percentage point decrease from 2015 to 2025. Click a county to see all of a county’s data."
+  }
+]
