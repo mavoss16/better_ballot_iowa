@@ -3,9 +3,6 @@ title: "Iowa Active Voter Summary"
 execute:
     echo: false
     warning: false
-project:
-    type: website
-    output-dir: docs
 format: 
     html:
         embed-resources: true
@@ -20,11 +17,14 @@ library(reactable)
 library(gt)
 library(mapview)
 
+
+library(ggplot2)
+
 ```
 
 
 ```{r}
-sf_data <- read_rds("../clean_data/registrations_sf_summary.rds") |> 
+sf_data <- read_rds("clean_data/registrations_sf_summary.rds") |> 
     select(
         NAME, 
         active_pct_2025, active_pct_2015, active_diff,
@@ -32,6 +32,8 @@ sf_data <- read_rds("../clean_data/registrations_sf_summary.rds") |>
         rep_active_pct_2025, rep_active_pct_2015, rep_active_diff,
         dem_active_pct_2025, dem_active_pct_2015, dem_active_diff
     )
+
+long_data <- read_csv("clean_data/registrations_merged_202405_202501.csv")
 
 ```
 
@@ -93,5 +95,25 @@ mapview(sf_data, zcol = "active_diff")
 
 mapview(sf_data, zcol = "two_party_active_diff")
 ```
+
+
+
+```{r}
+
+long_data |>
+    filter(month == 1) |>
+    ggplot(aes(y = active_pct, x = year, group = county)) +
+    geom_line() +
+    theme_minimal()
+
+
+
+long_data |>
+    filter(month == 1) |>
+    ggplot(aes(y = active_pct, x = year, group = county)) +
+    geom_line() +
+    theme_minimal()
+```
+
 
 :::
