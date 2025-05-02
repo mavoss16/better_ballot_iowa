@@ -17,9 +17,10 @@ library(reactable)
 library(gt)
 library(mapview)
 
-
 library(ggplot2)
+library(plotly)
 
+library(crosstalk)
 ```
 
 
@@ -33,7 +34,11 @@ sf_data <- read_rds("clean_data/registrations_sf_summary.rds") |>
         dem_active_pct_2025, dem_active_pct_2015, dem_active_diff
     )
 
-long_data <- read_csv("clean_data/registrations_merged_202405_202501.csv")
+long_data <- read_rds("clean_data/registrations_long.rds")
+
+long_sf_data <- read_rds("clean_data/registrations_sf_summary_long.rds")
+
+shared_long_data <- SharedData$new(long_data)
 
 ```
 
@@ -97,22 +102,39 @@ mapview(sf_data, zcol = "two_party_active_diff")
 ```
 
 
+```{r}
+filter_select(
+    "var_input", 
+    "Select a Variable for the Plot", 
+    shared_long_data, 
+    "name"
+)
+
+plot <- shared_long_data |>
+    # filter(month = 1) |>
+    ggplot(aes(y = value, x = year_month, group = county)) +
+    geom_line() +
+    theme_minimal()
+    
+ggplotly(plot)
+
+# mapview(shared_sf_data, zcol = "value")
+```
+
 
 ```{r}
 
-long_data |>
-    filter(month == 1) |>
-    ggplot(aes(y = active_pct, x = year, group = county)) +
-    geom_line() +
-    theme_minimal()
+# long_data |>
+#     filter(month == 1) |>
+#     ggplot(aes(y = active_pct, x = year, group = county)) +
+#     geom_line() +
+#     theme_minimal()
 
-
-
-long_data |>
-    filter(month == 1) |>
-    ggplot(aes(y = active_pct, x = year, group = county)) +
-    geom_line() +
-    theme_minimal()
+# long_data |>
+#     filter(month == 1) |>
+#     ggplot(aes(y = active_pct, x = year, group = county)) +
+#     geom_line() +
+#     theme_minimal()
 ```
 
 

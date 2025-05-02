@@ -5,6 +5,7 @@ library(dplyr)
 library(stringr)
 library(purrr)
 library(janitor)
+library(tidyr)
 
 library(tigris)
 library(mapview)
@@ -61,12 +62,18 @@ data <- bind_rows(data_list) |>
 
     reg_pct = grand_total / adult_pop,
     dem_reg_pct = (democratic_active + democratic_inactive) / adult_pop,
-    rep_reg_pct = (republican_active + republican_inactive) / adult_pop
+    rep_reg_pct = (republican_active + republican_inactive) / adult_pop,
+    two_party_reg_pct = (dem_reg_pct + rep_reg_pct)
   )
 
 
+
+# Active Voter Change Over Time ------------------------------------------
 latest <- data |>
   filter(year_month == "2025-01") |>
+  select(
+    county, contains("active")
+  ) |>
   select(
     county, ends_with("_pct")
   ) |>
@@ -75,11 +82,14 @@ latest <- data |>
 earliest <- data |>
   filter(year_month == "2015-01") |>
     select(
+      county, contains("active")
+    ) |>
+    select(
       county, ends_with("_pct")
     ) |>
     rename_with(ends_with("_pct"), .fn = ~ paste0(.x, "_2015"))
 
-county_data <- left_join(latest, earliest, by = "county") |>
+county_active_data <- left_join(latest, earliest, by = "county") |>
   mutate(
     active_diff = active_pct_2025 - active_pct_2015,
     rep_active_diff = rep_active_pct_2025 - rep_active_pct_2015,
@@ -89,9 +99,51 @@ county_data <- left_join(latest, earliest, by = "county") |>
     .after = county
   )
 
+
+# Registration Change Over Time ------------------------------------------
+latest <- data |>
+  filter(year_month == "2024-07") |>
+    select(
+      county, contains("reg")
+    ) |>
+    select(
+      county, ends_with("_pct")
+    ) |>
+  rename_with(ends_with("_pct"), .fn = ~ paste0(.x, "_2024"))
+
+earliest <- data |>
+  filter(year_month == "2014-07") |>
+    select(
+      county, contains("reg")
+    ) |>
+    select(
+      county, ends_with("_pct")
+    ) |>
+    rename_with(ends_with("_pct"), .fn = ~ paste0(.x, "_2014"))
+
+county_reg_data <- left_join(latest, earliest, by = "county") |>
+  mutate(
+    reg_diff = reg_pct_2024 - reg_pct_2014,
+    rep_reg_diff = rep_reg_pct_2024 - rep_reg_pct_2014,
+    dem_reg_diff = dem_reg_pct_2024 - dem_reg_pct_2014,
+    two_party_reg_diff = two_party_reg_pct_2024 - two_party_reg_pct_2014
+  )
+
 county_sf <- counties(state = "IA")
 
+county_data <- left_join(county_active_data, county_reg_data)
+
 sf_data <- left_join(county_sf, county_data, by = c("NAME" = "county"))
+
+long_sf_data <- pivot_longer(
+  sf_data,
+  active_diff:two_party_reg_diff
+)
+
+long_data <- pivot_longer(
+  data |> select(-file_path),
+  democratic_active:two_party_reg_pct
+)
 
 
 library(ggplot2)
@@ -103,4 +155,6 @@ ggplot(sf_data, aes(fill = active_pct_2025)) +
 mapview(sf_data, zcol = "active_pct_2025")
 
 write_csv(data, "clean_data/registrations_merged_202405_202501.csv")
+write_rds(long_data, "clean_data/registrations_long.rds")
 write_rds(sf_data, "clean_data/registrations_sf_summary.rds")
+write_rds(long_sf_data, "clean_data/registrations_sf_summary_long.rds")
