@@ -15,13 +15,15 @@ log <- data.frame(year = numeric(0), month = character(0), status = character(0)
 
 for(year in years){
   year_substring <- str_sub(year, start = -2)
-  dir_path <- file.path("data", "house_district_reg_pdf", year)
+  dir_path <- file.path("data", "house_district_reg", "pdfs", year)
   dir_create(dir_path)
   
   for(month in months){
     
+    month_num <- which(months == month)
+    
     download_url <- paste0("https://sos.iowa.gov/elections/pdf/VRStatsArchive/", year, "/SH", month, year_substring, ".pdf")
-    download_path <- file.path(dir_path, paste0(month, year_substring, ".pdf"))
+    download_path <- file.path(dir_path, paste0(year, "-", str_pad(month_num, width = 2, side = "left", pad = "0"), ".pdf"))
     current_status <- try({
       request(download_url) |>
         req_headers(
@@ -60,4 +62,4 @@ for(year in years){
   
 }
 
-readr::write_rds(log, "data/house_district_reg_pdf/download_log.rds")
+readr::write_rds(log, "data/house_district_reg/pdfs/download_log.rds")

@@ -6,7 +6,7 @@ import glob
 import pandas as pd
 
 # Directory containing the PDF files
-files = glob.glob("/Users/mavos/Documents/GitHub/better_ballot_iowa/data/house_district_reg_pdf/*/*.pdf", recursive = True)
+files = glob.glob("/Users/mavos/Documents/GitHub/better_ballot_iowa/data/house_district_reg/pdfs/*/*.pdf", recursive = True)
 
 
 
@@ -38,7 +38,7 @@ for pdf_file in files:
         base_filename = os.path.splitext(os.path.basename(pdf_file))[0]
 
         # Save the combined DataFrame to a single CSV file
-        csv_filename = f'/Users/mavos/Documents/GitHub/better_ballot_iowa/data/house_district_reg_csv_raw/{base_filename}.csv'
+        csv_filename = f'/Users/mavos/Documents/GitHub/better_ballot_iowa/data/house_district_reg/csvs/{base_filename}.csv'
         import csv
         with open(csv_filename, 'w', newline='') as f:
             writer = csv.writer(f)
