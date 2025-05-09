@@ -42,6 +42,7 @@ compare_df_cols_same(data_list)
 data <- bind_rows(data_list)
 
 write_rds(data, "data/house_district_reg/house_district_reg_combined.rds")
+data <- read_rds("data/house_district_reg/house_district_reg_combined.rds")
 
 
 data <- data |>
@@ -98,3 +99,7 @@ house_dist_active_diff <- left_join(latest, earliest, by = "county") |>
     .after = county
   )
 
+nov_2024 <- data |>
+  filter(year_month == "2024-11")
+
+write_rds(nov_2024, "data/house_district_reg/ia_2024_house_reg.rds")
