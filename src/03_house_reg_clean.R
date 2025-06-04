@@ -52,6 +52,12 @@ data <- data |>
     month = str_extract(year_month, "\\d\\d$") |> as.numeric()
   ) |>
   mutate(
+    dem_total = democratic_active + democratic_inactive,
+    rep_total = republican_active + republican_inactive,
+    no_party_total = no_party_active + no_party_inactive,
+    lib_total = libertarian_active + libertarian_inactive,
+    other_total = other_active + other_inactive,
+    
     # Registration Vars
     dem_active_pct = democratic_active / grand_total,
     rep_active_pct = republican_active / grand_total,

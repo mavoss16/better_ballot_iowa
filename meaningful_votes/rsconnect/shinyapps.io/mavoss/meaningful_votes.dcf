@@ -1,0 +1,12 @@
+name: meaningful_votes
+title: meaningful_votes
+username: mavoss
+account: mavoss
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14790181
+bundleId: 10312499
+url: https://mavoss.shinyapps.io/meaningful_votes/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

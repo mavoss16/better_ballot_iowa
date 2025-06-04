@@ -43,9 +43,14 @@ missing_parties <- general_results |>
   distinct(race_level, district_num, candidate, party)
 
 write_csv(missing_parties, "data/election_results/candidate_missing_parties.csv")
-filled_parties <- read_csv("data/election_results/candidate_filled_parties.csv")
+filled_parties <- read_csv("data/election_results/candidate_filled_parties.csv") |>
+  rename(party_new = party)
 
-general_results <- 
+general_results <- left_join(general_results, filled_parties) |>
+  mutate(
+    party = ifelse(is.na(party), no = party, yes = party_new)
+  ) |>
+  select(-party_new)
 
 
 ia_leg_primary <- primary_results |>

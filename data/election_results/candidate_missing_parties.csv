@@ -1,43 +1,43 @@
 race_level,district_num,candidate,party
-President and Vice President ( 1),NA,Kamala D. Harris and Tim Walz,NA
-President and Vice President ( 1),NA,Donald J. Trump and JD Vance,NA
+President and Vice President ( 1),NA,Kamala D. Harris and Tim Walz,Dem.
+President and Vice President ( 1),NA,Donald J. Trump and JD Vance,Rep.
 President and Vice President ( 1),NA,Chase Oliver and Mike ter Maat,NA
 President and Vice President ( 1),NA,Shiva Ayyadurai and Crystal Ellis,NA
 President and Vice President ( 1),NA,Claudia De la Cruz and Karina Garcia,NA
 President and Vice President ( 1),NA,William P. Stodden and Stephanie H. Cholensky,NA
-President and Vice President ( 1),NA,Robert F. Kennedy Jr and Nicole Shanahan,NA
+President and Vice President ( 1),NA,Robert F. Kennedy Jr and Nicole Shanahan,Lib.
 United States Representative,2,Jody Madlom Puffett,NA
-State Senator,16,Joshua Smith,NA
-State Senator,32,Brian Bruening,NA
-State Senator,34,Joe Hegland,NA
-State Senator,44,Lisa Ossian,NA
-State Representative,5,Michael Schnoes,NA
-State Representative,7,Martin Podraza,NA
-State Representative,13,Rosanne Plante,NA
-State Representative,13,Parker Hansen,NA
-State Representative,18,Tripp Narup,NA
-State Representative,26,Darcie Whitlow,NA
-State Representative,26,Donald Gier,NA
-State Representative,30,Jerry Cheevers,NA
-State Representative,33,Toya S. Johnson,NA
-State Representative,39,Troy Clark,NA
-State Representative,43,Brett Harvey Nelson,NA
-State Representative,47,Joe Shelly,NA
-State Representative,49,Eric Cooper,NA
-State Representative,52,David Blom,NA
-State Representative,62,Ervin Sabic,NA
-State Representative,63,Kayla Koether,NA
-State Representative,64,Ian Zahren,NA
-State Representative,68,Tim O'Brien,NA
-State Representative,71,James W. McClain,NA
-State Representative,79,Barclay Woerner,NA
-State Representative,82,Phil Wiese,NA
-State Representative,86,Stephen Knoner,NA
-State Representative,87,Thomas O'Donnell,NA
-State Representative,87,Curtis Oliver,NA
-State Representative,98,Nathan Ramker,NA
-State Representative,100,Martin L. Graber,NA
-State Representative,100,Nicolas Atwood,NA
+State Senator,16,Joshua Smith,Lib.
+State Senator,32,Brian Bruening,Dem.
+State Senator,34,Joe Hegland,Dem.
+State Senator,44,Lisa Ossian,Independent
+State Representative,5,Michael Schnoes,Independent
+State Representative,7,Martin Podraza,Independent
+State Representative,13,Rosanne Plante,Dem.
+State Representative,13,Parker Hansen,Independent
+State Representative,18,Tripp Narup,Dem.
+State Representative,26,Darcie Whitlow,Dem.
+State Representative,26,Donald Gier,Lib.
+State Representative,30,Jerry Cheevers,Rep.
+State Representative,33,Toya S. Johnson,Lib.
+State Representative,39,Troy Clark,Rep.
+State Representative,43,Brett Harvey Nelson,Independent
+State Representative,47,Joe Shelly,Dem.
+State Representative,49,Eric Cooper,Lib.
+State Representative,52,David Blom,Rep.
+State Representative,62,Ervin Sabic,Lib.
+State Representative,63,Kayla Koether,Dem.
+State Representative,64,Ian Zahren,Independent
+State Representative,68,Tim O'Brien,Dem.
+State Representative,71,James W. McClain,Rep.
+State Representative,79,Barclay Woerner,Rep.
+State Representative,82,Phil Wiese,Dem.
+State Representative,86,Stephen Knoner,Rep.
+State Representative,87,Thomas O'Donnell,Dem.
+State Representative,87,Curtis Oliver,Independent
+State Representative,98,Nathan Ramker,Rep.
+State Representative,100,Martin L. Graber,Rep.
+State Representative,100,Nicolas Atwood,Independent
 Constitutional Amendment 1 ( 1),NA,Yes,NA
 Constitutional Amendment 1 ( 1),NA,No,NA
 Constitutional Amendment 2 ( 1),NA,Yes,NA
