@@ -1,0 +1,501 @@
+state_representative_district,district_num,party,voter_classification,reg_total,reg_party,candidate,gen_total,gen_party,gen_vote_pct,gen_winning_party,gen_margin,gen_margin_category,gen_competitive,prim_voters,prim_margin,prim_margin_category
+State Representative District 001,1,Dem,Meaningful (General),16163,5791,J.D. Scholten,8643,4615,0.5339581163947703,Dem,0.0691889390258012,5-10%,TRUE,292,0.9726027397260273,Uncontested
+State Representative District 001,1,Rep,Meaningful (General),16163,4212,Josh Steinhoff,8643,4017,0.4647691773689691,Dem,0.0691889390258012,5-10%,TRUE,379,0.9788918205804749,Uncontested
+State Representative District 001,1,No Party,None-of-the-Above,16163,5977,NA,8643,NA,NA,Dem,0.0691889390258012,5-10%,TRUE,NA,NA,NA
+State Representative District 001,1,Lib,None-of-the-Above,16163,144,NA,8643,NA,NA,Dem,0.0691889390258012,5-10%,TRUE,2,NA,No Candidates
+State Representative District 001,1,Other,None-of-the-Above,16163,39,NA,8643,NA,NA,Dem,0.0691889390258012,5-10%,TRUE,NA,NA,NA
+State Representative District 002,2,Dem,Outnumbered,19202,5542,Jessica Lopez-Walker,11761,4613,0.39222855199387807,Rep,0.21401241391038173,20% or more,FALSE,314,0.9936305732484076,Uncontested
+State Representative District 002,2,Rep,Unneeded,19202,7005,Robert Henderson,11761,7130,0.6062409659042598,Rep,0.21401241391038173,20% or more,FALSE,940,0.9638297872340424,Uncontested
+State Representative District 002,2,No Party,Excluded,19202,6456,NA,11761,NA,NA,Rep,0.21401241391038173,20% or more,FALSE,NA,NA,NA
+State Representative District 002,2,Lib,Excluded,19202,151,NA,11761,NA,NA,Rep,0.21401241391038173,20% or more,FALSE,6,NA,No Candidates
+State Representative District 002,2,Other,Excluded,19202,48,NA,11761,NA,NA,Rep,0.21401241391038173,20% or more,FALSE,NA,NA,NA
+State Representative District 003,3,Dem,Outnumbered,22160,3053,Emma Bouza,15272,3236,0.21189104243059192,Rep,0.5746464117338921,20% or more,FALSE,103,0.9805825242718447,Uncontested
+State Representative District 003,3,Rep,Unneeded,22160,12862,Thomas Jeneary,15272,12012,0.7865374541644841,Rep,0.5746464117338921,20% or more,FALSE,2026,0.9842053307008884,Uncontested
+State Representative District 003,3,No Party,Excluded,22160,6084,NA,15272,NA,NA,Rep,0.5746464117338921,20% or more,FALSE,NA,NA,NA
+State Representative District 003,3,Lib,Excluded,22160,129,NA,15272,NA,NA,Rep,0.5746464117338921,20% or more,FALSE,4,NA,No Candidates
+State Representative District 003,3,Other,Excluded,22160,32,NA,15272,NA,NA,Rep,0.5746464117338921,20% or more,FALSE,NA,NA,NA
+State Representative District 004,4,Dem,Outnumbered,21592,1516,NA,14564,NA,NA,Rep,0.9626476242790443,Uncontested,FALSE,6,NA,No Candidates
+State Representative District 004,4,Rep,Unneeded,21592,16347,Skyler Wheeler,14564,14292,0.9813238121395221,Rep,0.9626476242790443,Uncontested,FALSE,4431,0.9629880388174228,Uncontested
+State Representative District 004,4,No Party,Excluded,21592,3664,NA,14564,NA,NA,Rep,0.9626476242790443,Uncontested,FALSE,NA,NA,NA
+State Representative District 004,4,Lib,Excluded,21592,53,NA,14564,NA,NA,Rep,0.9626476242790443,Uncontested,FALSE,6,NA,No Candidates
+State Representative District 004,4,Other,Excluded,21592,12,NA,14564,NA,NA,Rep,0.9626476242790443,Uncontested,FALSE,NA,NA,NA
+State Representative District 005,5,Dem,Outnumbered,21791,2970,NA,14318,NA,NA,Rep,0.5594356753736556,20% or more,FALSE,12,NA,No Candidates
+State Representative District 005,5,Rep,Unneeded,21791,12978,Zachary M. Dieken,14318,11146,0.7784606788657634,Rep,0.5594356753736556,20% or more,FALSE,2942,0.982324949014276,Uncontested
+State Representative District 005,5,No Party,Excluded,21791,5690,NA,14318,NA,NA,Rep,0.5594356753736556,20% or more,FALSE,NA,NA,NA
+State Representative District 005,5,Lib,Excluded,21791,129,NA,14318,NA,NA,Rep,0.5594356753736556,20% or more,FALSE,3,NA,No Candidates
+State Representative District 005,5,Other,Excluded,21791,24,NA,14318,NA,NA,Rep,0.5594356753736556,20% or more,FALSE,NA,NA,NA
+State Representative District 006,6,Dem,Outnumbered,20101,4365,NA,10254,NA,NA,Rep,0.9543592744294909,Uncontested,FALSE,10,NA,No Candidates
+State Representative District 006,6,Rep,Unneeded,20101,8873,Megan Jones,10254,10020,0.9771796372147454,Rep,0.9543592744294909,Uncontested,FALSE,1018,0.9096267190569745,Uncontested
+State Representative District 006,6,No Party,Excluded,20101,6684,NA,10254,NA,NA,Rep,0.9543592744294909,Uncontested,FALSE,NA,NA,NA
+State Representative District 006,6,Lib,Excluded,20101,137,NA,10254,NA,NA,Rep,0.9543592744294909,Uncontested,FALSE,1,NA,No Candidates
+State Representative District 006,6,Other,Excluded,20101,42,NA,10254,NA,NA,Rep,0.9543592744294909,Uncontested,FALSE,NA,NA,NA
+State Representative District 007,7,Dem,Outnumbered,22585,3612,NA,15274,NA,NA,Rep,0.6729082100301166,20% or more,FALSE,18,NA,No Candidates
+State Representative District 007,7,Rep,Meaningful (Primary),22585,11436,Mike Sexton,15274,12743,0.8342935707738641,Rep,0.6729082100301166,20% or more,FALSE,2700,0.019629629629629608,Less than 5%
+State Representative District 007,7,No Party,Excluded,22585,7375,NA,15274,NA,NA,Rep,0.6729082100301166,20% or more,FALSE,NA,NA,NA
+State Representative District 007,7,Lib,Excluded,22585,130,NA,15274,NA,NA,Rep,0.6729082100301166,20% or more,FALSE,3,NA,No Candidates
+State Representative District 007,7,Other,Excluded,22585,32,NA,15274,NA,NA,Rep,0.6729082100301166,20% or more,FALSE,NA,NA,NA
+State Representative District 008,8,Dem,Outnumbered,21104,5681,NA,10731,NA,NA,Rep,0.9493057496971391,Uncontested,FALSE,21,NA,No Candidates
+State Representative District 008,8,Rep,Unneeded,21104,7806,Ann Meyer,10731,10459,0.9746528748485696,Rep,0.9493057496971391,Uncontested,FALSE,1787,0.9843312814773364,Uncontested
+State Representative District 008,8,No Party,Excluded,21104,7409,NA,10731,NA,NA,Rep,0.9493057496971391,Uncontested,FALSE,NA,NA,NA
+State Representative District 008,8,Lib,Excluded,21104,161,NA,10731,NA,NA,Rep,0.9493057496971391,Uncontested,FALSE,0,NA,No Candidates
+State Representative District 008,8,Other,Excluded,21104,47,NA,10731,NA,NA,Rep,0.9493057496971391,Uncontested,FALSE,NA,NA,NA
+State Representative District 009,9,Dem,Outnumbered,23418,4721,Christian He-Man Schlaerth,16035,4270,0.26629248518864984,Rep,0.46610539444964144,20% or more,FALSE,290,0.9862068965517241,Uncontested
+State Representative District 009,9,Rep,Unneeded,23418,10109,Henry Stone,16035,11744,0.7323978796382913,Rep,0.46610539444964144,20% or more,FALSE,2004,0.9810379241516967,Uncontested
+State Representative District 009,9,No Party,Excluded,23418,8424,NA,16035,NA,NA,Rep,0.46610539444964144,20% or more,FALSE,NA,NA,NA
+State Representative District 009,9,Lib,Excluded,23418,142,NA,16035,NA,NA,Rep,0.46610539444964144,20% or more,FALSE,5,NA,No Candidates
+State Representative District 009,9,Other,Excluded,23418,22,NA,16035,NA,NA,Rep,0.46610539444964144,20% or more,FALSE,NA,NA,NA
+State Representative District 010,10,Dem,Outnumbered,25279,4955,NA,15544,NA,NA,Rep,0.9677045805455482,Uncontested,FALSE,15,NA,No Candidates
+State Representative District 010,10,Rep,Unneeded,25279,12077,John H. Wills,15544,15293,0.9838522902727741,Rep,0.9677045805455482,Uncontested,FALSE,1472,0.9619565217391304,Uncontested
+State Representative District 010,10,No Party,Excluded,25279,8052,NA,15544,NA,NA,Rep,0.9677045805455482,Uncontested,FALSE,NA,NA,NA
+State Representative District 010,10,Lib,Excluded,25279,163,NA,15544,NA,NA,Rep,0.9677045805455482,Uncontested,FALSE,1,NA,No Candidates
+State Representative District 010,10,Other,Excluded,25279,32,NA,15544,NA,NA,Rep,0.9677045805455482,Uncontested,FALSE,NA,NA,NA
+State Representative District 011,11,Dem,Outnumbered,23305,4603,Jeff Rich,15724,4329,0.2753116255405749,Rep,0.4484863902314932,20% or more,FALSE,285,0.9929824561403509,Uncontested
+State Representative District 011,11,Rep,Unneeded,23305,10373,Craig Steven Williams,15724,11381,0.7237980157720681,Rep,0.4484863902314932,20% or more,FALSE,1383,0.9913232104121474,Uncontested
+State Representative District 011,11,No Party,Excluded,23305,8124,NA,15724,NA,NA,Rep,0.4484863902314932,20% or more,FALSE,NA,NA,NA
+State Representative District 011,11,Lib,Excluded,23305,172,NA,15724,NA,NA,Rep,0.4484863902314932,20% or more,FALSE,1,NA,No Candidates
+State Representative District 011,11,Other,Excluded,23305,33,NA,15724,NA,NA,Rep,0.4484863902314932,20% or more,FALSE,NA,NA,NA
+State Representative District 012,12,Dem,Outnumbered,20823,3951,Dustin Durbin,13930,3643,0.2615218951902369,Rep,0.47566403445800437,20% or more,FALSE,184,0.9456521739130435,Uncontested
+State Representative District 012,12,Rep,Unneeded,20823,10025,Steven Holt,13930,10269,0.7371859296482413,Rep,0.47566403445800437,20% or more,FALSE,2339,0.9649422830269345,Uncontested
+State Representative District 012,12,No Party,Excluded,20823,6690,NA,13930,NA,NA,Rep,0.47566403445800437,20% or more,FALSE,NA,NA,NA
+State Representative District 012,12,Lib,Excluded,20823,124,NA,13930,NA,NA,Rep,0.47566403445800437,20% or more,FALSE,2,NA,No Candidates
+State Representative District 012,12,Other,Excluded,20823,33,NA,13930,NA,NA,Rep,0.47566403445800437,20% or more,FALSE,NA,NA,NA
+State Representative District 013,13,Dem,Outnumbered,22907,3829,Rosanne Plante,17055,3192,0.18715919085312224,Rep,0.5435356200527705,20% or more,FALSE,23,NA,No Candidates
+State Representative District 013,13,Rep,Meaningful (Primary),22907,12053,Travis M Sitzmann,17055,12462,0.7306948109058927,Rep,0.5435356200527705,20% or more,FALSE,2465,0.25517241379310346,20% or more
+State Representative District 013,13,No Party,Excluded,22907,6862,NA,17055,NA,NA,Rep,0.5435356200527705,20% or more,FALSE,NA,NA,NA
+State Representative District 013,13,Lib,Excluded,22907,133,NA,17055,NA,NA,Rep,0.5435356200527705,20% or more,FALSE,2,NA,No Candidates
+State Representative District 013,13,Other,Excluded,22907,30,NA,17055,NA,NA,Rep,0.5435356200527705,20% or more,FALSE,NA,NA,NA
+State Representative District 014,14,Dem,Outnumbered,21705,5273,NA,11401,NA,NA,Rep,0.9500043855802123,Uncontested,FALSE,18,NA,No Candidates
+State Representative District 014,14,Rep,Unneeded,21705,9032,Jacob Bossman,11401,11116,0.9750021927901061,Rep,0.9500043855802123,Uncontested,FALSE,1156,0.9602076124567474,Uncontested
+State Representative District 014,14,No Party,Excluded,21705,7200,NA,11401,NA,NA,Rep,0.9500043855802123,Uncontested,FALSE,NA,NA,NA
+State Representative District 014,14,Lib,Excluded,21705,155,NA,11401,NA,NA,Rep,0.9500043855802123,Uncontested,FALSE,2,NA,No Candidates
+State Representative District 014,14,Other,Excluded,21705,45,NA,11401,NA,NA,Rep,0.9500043855802123,Uncontested,FALSE,NA,NA,NA
+State Representative District 015,15,Dem,Outnumbered,23947,4964,Benjamin Schauer,18481,5655,0.30598993560954496,Rep,0.3863427303717331,20% or more,FALSE,276,0.9855072463768115,Uncontested
+State Representative District 015,15,Rep,Unneeded,23947,12396,Matt W. Windschitl,18481,12795,0.6923326659812781,Rep,0.3863427303717331,20% or more,FALSE,1792,0.9508928571428572,Uncontested
+State Representative District 015,15,No Party,Excluded,23947,6352,NA,18481,NA,NA,Rep,0.3863427303717331,20% or more,FALSE,NA,NA,NA
+State Representative District 015,15,Lib,Excluded,23947,195,NA,18481,NA,NA,Rep,0.3863427303717331,20% or more,FALSE,1,NA,No Candidates
+State Representative District 015,15,Other,Excluded,23947,40,NA,18481,NA,NA,Rep,0.3863427303717331,20% or more,FALSE,NA,NA,NA
+State Representative District 016,16,Dem,Outnumbered,24859,4219,Candella Foley-Finchem,17172,4265,0.24836943862101094,Rep,0.5014558583740975,20% or more,FALSE,293,0.9863481228668942,Uncontested
+State Representative District 016,16,Rep,Unneeded,24859,13649,David Sieck,17172,12876,0.7498252969951084,Rep,0.5014558583740975,20% or more,FALSE,2329,0.9682267067410906,Uncontested
+State Representative District 016,16,No Party,Excluded,24859,6681,NA,17172,NA,NA,Rep,0.5014558583740975,20% or more,FALSE,NA,NA,NA
+State Representative District 016,16,Lib,Excluded,24859,264,NA,17172,NA,NA,Rep,0.5014558583740975,20% or more,FALSE,5,NA,No Candidates
+State Representative District 016,16,Other,Excluded,24859,46,NA,17172,NA,NA,Rep,0.5014558583740975,20% or more,FALSE,NA,NA,NA
+State Representative District 017,17,Dem,Outnumbered,21864,3573,NA,12847,NA,NA,Rep,0.9674632209854441,Uncontested,FALSE,30,NA,No Candidates
+State Representative District 017,17,Rep,Unneeded,21864,11249,Devon Wood,12847,12638,0.9837316104927221,Rep,0.9674632209854441,Uncontested,FALSE,2319,0.9741267787839587,Uncontested
+State Representative District 017,17,No Party,Excluded,21864,6883,NA,12847,NA,NA,Rep,0.9674632209854441,Uncontested,FALSE,NA,NA,NA
+State Representative District 017,17,Lib,Excluded,21864,135,NA,12847,NA,NA,Rep,0.9674632209854441,Uncontested,FALSE,1,NA,No Candidates
+State Representative District 017,17,Other,Excluded,21864,24,NA,12847,NA,NA,Rep,0.9674632209854441,Uncontested,FALSE,NA,NA,NA
+State Representative District 018,18,Dem,Outnumbered,23148,3626,Tripp Narup,15149,3938,0.2599511518912139,Rep,0.4770611921578983,20% or more,FALSE,26,NA,No Candidates
+State Representative District 018,18,Rep,Unneeded,23148,12459,Thomas Jay Moore,15149,11165,0.7370123440491122,Rep,0.4770611921578983,20% or more,FALSE,1920,0.984375,Uncontested
+State Representative District 018,18,No Party,Excluded,23148,6872,NA,15149,NA,NA,Rep,0.4770611921578983,20% or more,FALSE,NA,NA,NA
+State Representative District 018,18,Lib,Excluded,23148,150,NA,15149,NA,NA,Rep,0.4770611921578983,20% or more,FALSE,3,NA,No Candidates
+State Representative District 018,18,Other,Excluded,23148,41,NA,15149,NA,NA,Rep,0.4770611921578983,20% or more,FALSE,NA,NA,NA
+State Representative District 019,19,Dem,Outnumbered,21616,6165,Roger Petersen,13246,5469,0.4128793598067341,Rep,0.17227842367507168,15-20%,FALSE,243,0.9753086419753085,Uncontested
+State Representative District 019,19,Rep,Unneeded,21616,7809,Brent Siegrist,13246,7751,0.5851577834818058,Rep,0.17227842367507168,15-20%,FALSE,654,0.9785932721712538,Uncontested
+State Representative District 019,19,No Party,Excluded,21616,7280,NA,13246,NA,NA,Rep,0.17227842367507168,15-20%,FALSE,NA,NA,NA
+State Representative District 019,19,Lib,Excluded,21616,275,NA,13246,NA,NA,Rep,0.17227842367507168,15-20%,FALSE,2,NA,No Candidates
+State Representative District 019,19,Other,Excluded,21616,87,NA,13246,NA,NA,Rep,0.17227842367507168,15-20%,FALSE,NA,NA,NA
+State Representative District 020,20,Dem,Meaningful (General),19932,6050,Josh Turek,11208,5881,0.5247144896502498,Dem,0.05005353319057815,5-10%,TRUE,242,0.9917355371900827,Uncontested
+State Representative District 020,20,Rep,Meaningful (General),19932,6290,James Wassell,11208,5320,0.47466095645967166,Dem,0.05005353319057815,5-10%,TRUE,367,0.2070844686648502,20% or more
+State Representative District 020,20,No Party,None-of-the-Above,19932,7187,NA,11208,NA,NA,Dem,0.05005353319057815,5-10%,TRUE,NA,NA,NA
+State Representative District 020,20,Lib,None-of-the-Above,19932,305,NA,11208,NA,NA,Dem,0.05005353319057815,5-10%,TRUE,0,NA,No Candidates
+State Representative District 020,20,Other,None-of-the-Above,19932,100,NA,11208,NA,NA,Dem,0.05005353319057815,5-10%,TRUE,NA,NA,NA
+State Representative District 021,21,Dem,Outnumbered,23453,5956,Spencer A Waugh,17373,7166,0.412479134288839,Rep,0.1737178380245208,15-20%,FALSE,636,0.990566037735849,Uncontested
+State Representative District 021,21,Rep,Unneeded,23453,9239,Brooke Boden,17373,10184,0.5861969723133598,Rep,0.1737178380245208,15-20%,FALSE,1514,0.9616908850726553,Uncontested
+State Representative District 021,21,No Party,Excluded,23453,8030,NA,17373,NA,NA,Rep,0.1737178380245208,15-20%,FALSE,NA,NA,NA
+State Representative District 021,21,Lib,Excluded,23453,183,NA,17373,NA,NA,Rep,0.1737178380245208,15-20%,FALSE,7,NA,No Candidates
+State Representative District 021,21,Other,Excluded,23453,45,NA,17373,NA,NA,Rep,0.1737178380245208,15-20%,FALSE,NA,NA,NA
+State Representative District 022,22,Dem,Outnumbered,25587,6633,Rory D. Taylor,20025,8134,0.40619225967540573,Rep,0.18611735330836454,15-20%,FALSE,719,0.9972183588317107,Uncontested
+State Representative District 022,22,Rep,Meaningful (Primary),25587,10026,Samantha Fett,20025,11861,0.5923096129837703,Rep,0.18611735330836454,15-20%,FALSE,2210,0.10271493212669686,10-15%
+State Representative District 022,22,No Party,Excluded,25587,8680,NA,20025,NA,NA,Rep,0.18611735330836454,15-20%,FALSE,NA,NA,NA
+State Representative District 022,22,Lib,Excluded,25587,214,NA,20025,NA,NA,Rep,0.18611735330836454,15-20%,FALSE,7,NA,No Candidates
+State Representative District 022,22,Other,Excluded,25587,34,NA,20025,NA,NA,Rep,0.18611735330836454,15-20%,FALSE,NA,NA,NA
+State Representative District 023,23,Dem,Outnumbered,23726,4460,Karen Varley,17812,4939,0.27728497642039074,Rep,0.4434089377947451,20% or more,FALSE,532,1,Uncontested
+State Representative District 023,23,Rep,Unneeded,23726,10690,Ray Bubba Sorensen,17812,12837,0.7206939142151358,Rep,0.4434089377947451,20% or more,FALSE,1841,0.9750135795763173,Uncontested
+State Representative District 023,23,No Party,Excluded,23726,8360,NA,17812,NA,NA,Rep,0.4434089377947451,20% or more,FALSE,NA,NA,NA
+State Representative District 023,23,Lib,Excluded,23726,189,NA,17812,NA,NA,Rep,0.4434089377947451,20% or more,FALSE,1,NA,No Candidates
+State Representative District 023,23,Other,Excluded,23726,27,NA,17812,NA,NA,Rep,0.4434089377947451,20% or more,FALSE,NA,NA,NA
+State Representative District 024,24,Dem,Outnumbered,20881,4030,Sonya Hicks,14809,4873,0.32905665473698426,Rep,0.33952326288068063,20% or more,FALSE,534,0.9850187265917603,Uncontested
+State Representative District 024,24,Rep,Meaningful (Primary),20881,10306,Sam Wengryn,14809,9901,0.6685799176176649,Rep,0.33952326288068063,20% or more,FALSE,3557,0.32864773685690185,20% or more
+State Representative District 024,24,No Party,Excluded,20881,6365,NA,14809,NA,NA,Rep,0.33952326288068063,20% or more,FALSE,NA,NA,NA
+State Representative District 024,24,Lib,Excluded,20881,147,NA,14809,NA,NA,Rep,0.33952326288068063,20% or more,FALSE,6,NA,No Candidates
+State Representative District 024,24,Other,Excluded,20881,33,NA,14809,NA,NA,Rep,0.33952326288068063,20% or more,FALSE,NA,NA,NA
+State Representative District 025,25,Dem,Outnumbered,19031,5993,Brenda Curran,12305,4321,0.3511580658268996,Rep,0.2967086550182853,20% or more,FALSE,374,0.9839572192513368,Uncontested
+State Representative District 025,25,Rep,Unneeded,19031,6197,Hans Wilz,12305,7972,0.6478667208451849,Rep,0.2967086550182853,20% or more,FALSE,451,0.960088691796009,Uncontested
+State Representative District 025,25,No Party,Excluded,19031,6681,NA,12305,NA,NA,Rep,0.2967086550182853,20% or more,FALSE,NA,NA,NA
+State Representative District 025,25,Lib,Excluded,19031,120,NA,12305,NA,NA,Rep,0.2967086550182853,20% or more,FALSE,0,NA,No Candidates
+State Representative District 025,25,Other,Excluded,19031,40,NA,12305,NA,NA,Rep,0.2967086550182853,20% or more,FALSE,NA,NA,NA
+State Representative District 026,26,Dem,Outnumbered,21373,4331,Darcie Whitlow,15167,3658,0.2411815124942309,Rep,0.4737258521790729,20% or more,FALSE,102,NA,No Candidates
+State Representative District 026,26,Rep,Unneeded,21373,10180,Austin Harris,15167,10843,0.7149073646733038,Rep,0.4737258521790729,20% or more,FALSE,2485,0.9694164989939638,Uncontested
+State Representative District 026,26,No Party,Excluded,21373,6700,NA,15167,NA,NA,Rep,0.4737258521790729,20% or more,FALSE,NA,NA,NA
+State Representative District 026,26,Lib,Excluded,21373,129,Donald Gier,15167,634,0.04180127909276719,Rep,0.4737258521790729,20% or more,FALSE,5,NA,No Candidates
+State Representative District 026,26,Other,Excluded,21373,33,NA,15167,NA,NA,Rep,0.4737258521790729,20% or more,FALSE,NA,NA,NA
+State Representative District 027,27,Dem,Unneeded,26955,7667,Kenan Judge,21333,11886,0.5571649557024329,Dem,0.11517367458866545,10-15%,FALSE,699,0.994277539341917,Uncontested
+State Representative District 027,27,Rep,Outnumbered,26955,8995,Oliver Bardwell,21333,9429,0.4419912811137674,Dem,0.11517367458866545,10-15%,FALSE,647,0.9690880989180835,Uncontested
+State Representative District 027,27,No Party,Excluded,26955,10047,NA,21333,NA,NA,Dem,0.11517367458866545,10-15%,FALSE,NA,NA,NA
+State Representative District 027,27,Lib,Excluded,26955,224,NA,21333,NA,NA,Dem,0.11517367458866545,10-15%,FALSE,1,NA,No Candidates
+State Representative District 027,27,Other,Excluded,26955,22,NA,21333,NA,NA,Dem,0.11517367458866545,10-15%,FALSE,NA,NA,NA
+State Representative District 028,28,Dem,Meaningful (General),25071,6920,Laura Snider,19503,9095,0.46633851202379123,Rep,0.0659385735527867,5-10%,TRUE,759,0.9868247694334651,Uncontested
+State Representative District 028,28,Rep,Meaningful (General),25071,8700,David Young,19503,10381,0.5322770855765779,Rep,0.0659385735527867,5-10%,TRUE,918,0.7777777777777777,20% or more
+State Representative District 028,28,No Party,None-of-the-Above,25071,9194,NA,19503,NA,NA,Rep,0.0659385735527867,5-10%,TRUE,NA,NA,NA
+State Representative District 028,28,Lib,None-of-the-Above,25071,220,NA,19503,NA,NA,Rep,0.0659385735527867,5-10%,TRUE,1,NA,No Candidates
+State Representative District 028,28,Other,None-of-the-Above,25071,37,NA,19503,NA,NA,Rep,0.0659385735527867,5-10%,TRUE,NA,NA,NA
+State Representative District 029,29,Dem,Unneeded,17368,7786,Brian Meyer,8303,7948,0.9572443695049981,Dem,0.9144887390099963,Uncontested,FALSE,507,0.9763313609467457,Uncontested
+State Representative District 029,29,Rep,Outnumbered,17368,3528,NA,8303,NA,NA,Dem,0.9144887390099963,Uncontested,FALSE,18,NA,No Candidates
+State Representative District 029,29,No Party,Excluded,17368,5832,NA,8303,NA,NA,Dem,0.9144887390099963,Uncontested,FALSE,NA,NA,NA
+State Representative District 029,29,Lib,Excluded,17368,168,NA,8303,NA,NA,Dem,0.9144887390099963,Uncontested,FALSE,2,NA,No Candidates
+State Representative District 029,29,Other,Excluded,17368,54,NA,8303,NA,NA,Dem,0.9144887390099963,Uncontested,FALSE,NA,NA,NA
+State Representative District 030,30,Dem,Unneeded,18982,8669,Megan L. Srinivas,12045,7515,0.6239103362391034,Dem,0.25222083852220845,20% or more,FALSE,786,0.9821882951653944,Uncontested
+State Representative District 030,30,Rep,Outnumbered,18982,3856,Jerry Cheevers,12045,4477,0.37168949771689497,Dem,0.25222083852220845,20% or more,FALSE,29,NA,No Candidates
+State Representative District 030,30,No Party,Excluded,18982,6236,NA,12045,NA,NA,Dem,0.25222083852220845,20% or more,FALSE,NA,NA,NA
+State Representative District 030,30,Lib,Excluded,18982,169,NA,12045,NA,NA,Dem,0.25222083852220845,20% or more,FALSE,2,NA,No Candidates
+State Representative District 030,30,Other,Excluded,18982,52,NA,12045,NA,NA,Dem,0.25222083852220845,20% or more,FALSE,NA,NA,NA
+State Representative District 031,31,Dem,Unneeded,24192,8744,Mary Lee Madison,12978,12465,0.9604715672676838,Dem,0.9209431345353676,Uncontested,FALSE,1323,0.9894179894179893,Uncontested
+State Representative District 031,31,Rep,Outnumbered,24192,7423,NA,12978,NA,NA,Dem,0.9209431345353676,Uncontested,FALSE,30,NA,No Candidates
+State Representative District 031,31,No Party,Excluded,24192,7753,NA,12978,NA,NA,Dem,0.9209431345353676,Uncontested,FALSE,NA,NA,NA
+State Representative District 031,31,Lib,Excluded,24192,216,NA,12978,NA,NA,Dem,0.9209431345353676,Uncontested,FALSE,0,NA,No Candidates
+State Representative District 031,31,Other,Excluded,24192,56,NA,12978,NA,NA,Dem,0.9209431345353676,Uncontested,FALSE,NA,NA,NA
+State Representative District 032,32,Dem,Unneeded,22282,8984,Jennifer Konfrst,12337,11837,0.9594715084704547,Dem,0.9189430169409094,Uncontested,FALSE,1599,0.9887429643527204,Uncontested
+State Representative District 032,32,Rep,Outnumbered,22282,6459,NA,12337,NA,NA,Dem,0.9189430169409094,Uncontested,FALSE,26,NA,No Candidates
+State Representative District 032,32,No Party,Excluded,22282,6604,NA,12337,NA,NA,Dem,0.9189430169409094,Uncontested,FALSE,NA,NA,NA
+State Representative District 032,32,Lib,Excluded,22282,183,NA,12337,NA,NA,Dem,0.9189430169409094,Uncontested,FALSE,2,NA,No Candidates
+State Representative District 032,32,Other,Excluded,22282,52,NA,12337,NA,NA,Dem,0.9189430169409094,Uncontested,FALSE,NA,NA,NA
+State Representative District 033,33,Dem,Unneeded,17629,8372,Ruth Ann Gaines,9395,7058,0.7512506652474721,Dem,0.5191059073975519,20% or more,FALSE,626,0.9840255591054312,Uncontested
+State Representative District 033,33,Rep,Outnumbered,17629,3023,NA,9395,NA,NA,Dem,0.5191059073975519,20% or more,FALSE,20,NA,No Candidates
+State Representative District 033,33,No Party,Excluded,17629,5989,NA,9395,NA,NA,Dem,0.5191059073975519,20% or more,FALSE,NA,NA,NA
+State Representative District 033,33,Lib,Excluded,17629,172,Toya S. Johnson,9395,2181,0.23214475784992017,Dem,0.5191059073975519,20% or more,FALSE,4,NA,No Candidates
+State Representative District 033,33,Other,Excluded,17629,73,NA,9395,NA,NA,Dem,0.5191059073975519,20% or more,FALSE,NA,NA,NA
+State Representative District 034,34,Dem,Meaningful (Primary),18214,9958,Rob Johnson,10180,7783,0.7645383104125737,Dem,0.5341846758349705,20% or more,FALSE,1777,0.02644907146876757,Less than 5%
+State Representative District 034,34,Rep,Outnumbered,18214,2453,Danielle Duggan,10180,2345,0.23035363457760313,Dem,0.5341846758349705,20% or more,FALSE,88,0.9772727272727273,Uncontested
+State Representative District 034,34,No Party,Excluded,18214,5534,NA,10180,NA,NA,Dem,0.5341846758349705,20% or more,FALSE,NA,NA,NA
+State Representative District 034,34,Lib,Excluded,18214,188,NA,10180,NA,NA,Dem,0.5341846758349705,20% or more,FALSE,2,NA,No Candidates
+State Representative District 034,34,Other,Excluded,18214,81,NA,10180,NA,NA,Dem,0.5341846758349705,20% or more,FALSE,NA,NA,NA
+State Representative District 035,35,Dem,Unneeded,21985,10896,Sean Bagniewski,15924,10574,0.6640291384074353,Dem,0.3812484300427028,20% or more,FALSE,1733,0.9549913444893248,Uncontested
+State Representative District 035,35,Rep,Outnumbered,21985,4347,Angela Kay Schreader,15924,4503,0.28278070836473246,Dem,0.3812484300427028,20% or more,FALSE,251,0.22310756972111556,20% or more
+State Representative District 035,35,No Party,Excluded,21985,6476,NA,15924,NA,NA,Dem,0.3812484300427028,20% or more,FALSE,NA,NA,NA
+State Representative District 035,35,Lib,Excluded,21985,211,David G. Green,15924,802,0.05036423009294147,Dem,0.3812484300427028,20% or more,FALSE,3,1,Uncontested
+State Representative District 035,35,Other,Excluded,21985,55,NA,15924,NA,NA,Dem,0.3812484300427028,20% or more,FALSE,NA,NA,NA
+State Representative District 036,36,Dem,Unneeded,23764,13150,Austin Baeth,13346,13031,0.9763974224486738,Dem,0.9527948448973476,Uncontested,FALSE,2358,0.9906700593723494,Uncontested
+State Representative District 036,36,Rep,Outnumbered,23764,3845,NA,13346,NA,NA,Dem,0.9527948448973476,Uncontested,FALSE,26,NA,No Candidates
+State Representative District 036,36,No Party,Excluded,23764,6504,NA,13346,NA,NA,Dem,0.9527948448973476,Uncontested,FALSE,NA,NA,NA
+State Representative District 036,36,Lib,Excluded,23764,209,NA,13346,NA,NA,Dem,0.9527948448973476,Uncontested,FALSE,2,NA,No Candidates
+State Representative District 036,36,Other,Excluded,23764,56,NA,13346,NA,NA,Dem,0.9527948448973476,Uncontested,FALSE,NA,NA,NA
+State Representative District 037,37,Dem,Outnumbered,24175,4061,NA,15213,NA,NA,Rep,0.9660816407020312,Uncontested,FALSE,19,NA,No Candidates
+State Representative District 037,37,Rep,Unneeded,24175,12236,Barb Kniff McCulla,15213,14955,0.9830408203510156,Rep,0.9660816407020312,Uncontested,FALSE,1702,0.9694477085781434,Uncontested
+State Representative District 037,37,No Party,Excluded,24175,7715,NA,15213,NA,NA,Rep,0.9660816407020312,Uncontested,FALSE,NA,NA,NA
+State Representative District 037,37,Lib,Excluded,24175,137,NA,15213,NA,NA,Rep,0.9660816407020312,Uncontested,FALSE,6,NA,No Candidates
+State Representative District 037,37,Other,Excluded,24175,26,NA,15213,NA,NA,Rep,0.9660816407020312,Uncontested,FALSE,NA,NA,NA
+State Representative District 038,38,Dem,Outnumbered,22527,6276,Brad Magg,16207,7164,0.4420312210773123,Rep,0.11544394397482571,10-15%,FALSE,520,0.9923076923076923,Uncontested
+State Representative District 038,38,Rep,Unneeded,22527,8138,Jon Dunwell,16207,9035,0.557475165052138,Rep,0.11544394397482571,10-15%,FALSE,1498,0.9612817089452603,Uncontested
+State Representative District 038,38,No Party,Excluded,22527,7940,NA,16207,NA,NA,Rep,0.11544394397482571,10-15%,FALSE,NA,NA,NA
+State Representative District 038,38,Lib,Excluded,22527,147,NA,16207,NA,NA,Rep,0.11544394397482571,10-15%,FALSE,1,NA,No Candidates
+State Representative District 038,38,Other,Excluded,22527,26,NA,16207,NA,NA,Rep,0.11544394397482571,10-15%,FALSE,NA,NA,NA
+State Representative District 039,39,Dem,Meaningful (General),20452,7687,Rick L. Olson,13763,7511,0.5457385744387125,Dem,0.09402019908450199,5-10%,TRUE,676,0.9911242603550297,Uncontested
+State Representative District 039,39,Rep,Meaningful (General),20452,5728,Troy Clark,13763,6217,0.45171837535421056,Dem,0.09402019908450199,5-10%,TRUE,31,NA,No Candidates
+State Representative District 039,39,No Party,None-of-the-Above,20452,6791,NA,13763,NA,NA,Dem,0.09402019908450199,5-10%,TRUE,NA,NA,NA
+State Representative District 039,39,Lib,None-of-the-Above,20452,207,NA,13763,NA,NA,Dem,0.09402019908450199,5-10%,TRUE,4,NA,No Candidates
+State Representative District 039,39,Other,None-of-the-Above,20452,39,NA,13763,NA,NA,Dem,0.09402019908450199,5-10%,TRUE,NA,NA,NA
+State Representative District 040,40,Dem,Meaningful (General),22810,7139,Heather Sievers,17146,8402,0.4900268284147906,Rep,0.018546599790038476,Less than 5%,TRUE,656,0.9969512195121952,Uncontested
+State Representative District 040,40,Rep,Meaningful (General),22810,7363,Bill Gustoff,17146,8720,0.5085734282048291,Rep,0.018546599790038476,Less than 5%,TRUE,460,0.9565217391304348,Uncontested
+State Representative District 040,40,No Party,None-of-the-Above,22810,8057,NA,17146,NA,NA,Rep,0.018546599790038476,Less than 5%,TRUE,NA,NA,NA
+State Representative District 040,40,Lib,None-of-the-Above,22810,214,NA,17146,NA,NA,Rep,0.018546599790038476,Less than 5%,TRUE,1,NA,No Candidates
+State Representative District 040,40,Other,None-of-the-Above,22810,37,NA,17146,NA,NA,Rep,0.018546599790038476,Less than 5%,TRUE,NA,NA,NA
+State Representative District 041,41,Dem,Meaningful (General),26814,7589,Molly Buck,21309,10569,0.49598761086864707,Rep,0.006476136843587166,Less than 5%,TRUE,748,0.9973262032085561,Uncontested
+State Representative District 041,41,Rep,Meaningful (General),26814,9359,Ryan Weldon,21309,10707,0.5024637477122342,Rep,0.006476136843587166,Less than 5%,TRUE,1262,0.2408874801901743,20% or more
+State Representative District 041,41,No Party,None-of-the-Above,26814,9565,NA,21309,NA,NA,Rep,0.006476136843587166,Less than 5%,TRUE,NA,NA,NA
+State Representative District 041,41,Lib,None-of-the-Above,26814,249,NA,21309,NA,NA,Rep,0.006476136843587166,Less than 5%,TRUE,1,NA,No Candidates
+State Representative District 041,41,Other,None-of-the-Above,26814,52,NA,21309,NA,NA,Rep,0.006476136843587166,Less than 5%,TRUE,NA,NA,NA
+State Representative District 042,42,Dem,Meaningful (General),23509,7044,Heather Matson,18094,9108,0.5033712832983309,Dem,0.0082347739582182,Less than 5%,TRUE,653,0.996937212863706,Uncontested
+State Representative District 042,42,Rep,Meaningful (General),23509,8151,Heather Stephenson,18094,8959,0.4951365093401127,Dem,0.0082347739582182,Less than 5%,TRUE,704,0.9857954545454546,Uncontested
+State Representative District 042,42,No Party,None-of-the-Above,23509,8071,NA,18094,NA,NA,Dem,0.0082347739582182,Less than 5%,TRUE,NA,NA,NA
+State Representative District 042,42,Lib,None-of-the-Above,23509,210,NA,18094,NA,NA,Dem,0.0082347739582182,Less than 5%,TRUE,2,NA,No Candidates
+State Representative District 042,42,Other,None-of-the-Above,23509,33,NA,18094,NA,NA,Dem,0.0082347739582182,Less than 5%,TRUE,NA,NA,NA
+State Representative District 043,43,Dem,Meaningful (General),23913,7769,Tiara Mays-Sims,18860,8959,0.4750265111346766,Rep,0.03388123011664895,Less than 5%,TRUE,1106,0.9909584086799277,Uncontested
+State Representative District 043,43,Rep,Meaningful (General),23913,8302,Eddie Andrews,18860,9598,0.5089077412513255,Rep,0.03388123011664895,Less than 5%,TRUE,683,0.9795021961932651,Uncontested
+State Representative District 043,43,No Party,None-of-the-Above,23913,7605,NA,18860,NA,NA,Rep,0.03388123011664895,Less than 5%,TRUE,NA,NA,NA
+State Representative District 043,43,Lib,None-of-the-Above,23913,204,NA,18860,NA,NA,Rep,0.03388123011664895,Less than 5%,TRUE,1,NA,No Candidates
+State Representative District 043,43,Other,None-of-the-Above,23913,33,NA,18860,NA,NA,Rep,0.03388123011664895,Less than 5%,TRUE,NA,NA,NA
+State Representative District 044,44,Dem,Meaningful (Primary),22747,8238,Larry McBurney,15204,9769,0.6425282820310445,Dem,0.2930807682188898,20% or more,FALSE,1683,0.292929292929293,20% or more
+State Representative District 044,44,Rep,Outnumbered,22747,7241,NA,15204,NA,NA,Dem,0.2930807682188898,20% or more,FALSE,42,NA,No Candidates
+State Representative District 044,44,No Party,Excluded,22747,7036,NA,15204,NA,NA,Dem,0.2930807682188898,20% or more,FALSE,NA,NA,NA
+State Representative District 044,44,Lib,Excluded,22747,189,Jake Heard,15204,5313,0.3494475138121547,Dem,0.2930807682188898,20% or more,FALSE,5,1,Uncontested
+State Representative District 044,44,Other,Excluded,22747,43,NA,15204,NA,NA,Dem,0.2930807682188898,20% or more,FALSE,NA,NA,NA
+State Representative District 045,45,Dem,Outnumbered,24645,5893,Anthony William Thompson,19865,6998,0.3522778756607098,Rep,0.2934306569343066,20% or more,FALSE,567,0.9858906525573192,Uncontested
+State Representative District 045,45,Rep,Unneeded,24645,9968,Brian K. Lohse,19865,12827,0.6457085325950164,Rep,0.2934306569343066,20% or more,FALSE,644,0.9565217391304348,Uncontested
+State Representative District 045,45,No Party,Excluded,24645,8539,NA,19865,NA,NA,Rep,0.2934306569343066,20% or more,FALSE,NA,NA,NA
+State Representative District 045,45,Lib,Excluded,24645,212,NA,19865,NA,NA,Rep,0.2934306569343066,20% or more,FALSE,2,NA,No Candidates
+State Representative District 045,45,Other,Excluded,24645,33,NA,19865,NA,NA,Rep,0.2934306569343066,20% or more,FALSE,NA,NA,NA
+State Representative District 046,46,Dem,Outnumbered,25219,6502,Lynne Campbell,19722,8834,0.447926173816043,Rep,0.10313355643443872,10-15%,FALSE,603,0.9966832504145937,Uncontested
+State Representative District 046,46,Rep,Unneeded,25219,9044,Dan Gehlbach,19722,10868,0.5510597302504817,Rep,0.10313355643443872,10-15%,FALSE,529,0.9470699432892249,Uncontested
+State Representative District 046,46,No Party,Excluded,25219,9440,NA,19722,NA,NA,Rep,0.10313355643443872,10-15%,FALSE,NA,NA,NA
+State Representative District 046,46,Lib,Excluded,25219,196,NA,19722,NA,NA,Rep,0.10313355643443872,10-15%,FALSE,0,NA,No Candidates
+State Representative District 046,46,Other,Excluded,25219,37,NA,19722,NA,NA,Rep,0.10313355643443872,10-15%,FALSE,NA,NA,NA
+State Representative District 047,47,Dem,Outnumbered,22610,5183,Joe Shelly,15551,5570,0.35817632306604075,Rep,0.28203974020963285,20% or more,FALSE,51,NA,No Candidates
+State Representative District 047,47,Rep,Unneeded,22610,8925,Carter Nordman,15551,9956,0.6402160632756736,Rep,0.28203974020963285,20% or more,FALSE,757,0.9841479524438572,Uncontested
+State Representative District 047,47,No Party,Excluded,22610,8286,NA,15551,NA,NA,Rep,0.28203974020963285,20% or more,FALSE,NA,NA,NA
+State Representative District 047,47,Lib,Excluded,22610,184,NA,15551,NA,NA,Rep,0.28203974020963285,20% or more,FALSE,3,NA,No Candidates
+State Representative District 047,47,Other,Excluded,22610,32,NA,15551,NA,NA,Rep,0.28203974020963285,20% or more,FALSE,NA,NA,NA
+State Representative District 048,48,Dem,Outnumbered,24585,6251,Penny Vossler,17705,7022,0.3966111268003389,Rep,0.20513979101948604,20% or more,FALSE,411,0.9951338199513382,Uncontested
+State Representative District 048,48,Rep,Unneeded,24585,8539,Chad Behn,17705,10654,0.6017509178198249,Rep,0.20513979101948604,20% or more,FALSE,944,0.9872881355932204,Uncontested
+State Representative District 048,48,No Party,Excluded,24585,9555,NA,17705,NA,NA,Rep,0.20513979101948604,20% or more,FALSE,NA,NA,NA
+State Representative District 048,48,Lib,Excluded,24585,204,NA,17705,NA,NA,Rep,0.20513979101948604,20% or more,FALSE,6,NA,No Candidates
+State Representative District 048,48,Other,Excluded,24585,36,NA,17705,NA,NA,Rep,0.20513979101948604,20% or more,FALSE,NA,NA,NA
+State Representative District 049,49,Dem,Unneeded,20549,7679,Beth Wessel-Kroeschell,10231,7500,0.733066171439742,Dem,0.47512462124914473,20% or more,FALSE,371,1,Uncontested
+State Representative District 049,49,Rep,Outnumbered,20549,4447,NA,10231,NA,NA,Dem,0.47512462124914473,20% or more,FALSE,27,NA,No Candidates
+State Representative District 049,49,No Party,Excluded,20549,8111,NA,10231,NA,NA,Dem,0.47512462124914473,20% or more,FALSE,NA,NA,NA
+State Representative District 049,49,Lib,Excluded,20549,234,Eric Cooper,10231,2639,0.2579415501905972,Dem,0.47512462124914473,20% or more,FALSE,1,NA,No Candidates
+State Representative District 049,49,Other,Excluded,20549,78,NA,10231,NA,NA,Dem,0.47512462124914473,20% or more,FALSE,NA,NA,NA
+State Representative District 050,50,Dem,Unneeded,22759,9007,Ross Wilburn,12165,11802,0.9701602959309494,Dem,0.9403205918618989,Uncontested,FALSE,513,1,Uncontested
+State Representative District 050,50,Rep,Outnumbered,22759,5215,NA,12165,NA,NA,Dem,0.9403205918618989,Uncontested,FALSE,55,NA,No Candidates
+State Representative District 050,50,No Party,Excluded,22759,8256,NA,12165,NA,NA,Dem,0.9403205918618989,Uncontested,FALSE,NA,NA,NA
+State Representative District 050,50,Lib,Excluded,22759,219,NA,12165,NA,NA,Dem,0.9403205918618989,Uncontested,FALSE,3,NA,No Candidates
+State Representative District 050,50,Other,Excluded,22759,62,NA,12165,NA,NA,Dem,0.9403205918618989,Uncontested,FALSE,NA,NA,NA
+State Representative District 051,51,Dem,Outnumbered,24081,5489,Ryan Condon,18025,6719,0.3727600554785021,Rep,0.2527600554785021,20% or more,FALSE,351,0.982905982905983,Uncontested
+State Representative District 051,51,Rep,Meaningful (Primary),24081,9384,Brett Barker,18025,11275,0.6255201109570042,Rep,0.2527600554785021,20% or more,FALSE,1993,0.19668840943301558,15-20%
+State Representative District 051,51,No Party,Excluded,24081,8930,NA,18025,NA,NA,Rep,0.2527600554785021,20% or more,FALSE,NA,NA,NA
+State Representative District 051,51,Lib,Excluded,24081,230,NA,18025,NA,NA,Rep,0.2527600554785021,20% or more,FALSE,4,NA,No Candidates
+State Representative District 051,51,Other,Excluded,24081,48,NA,18025,NA,NA,Rep,0.2527600554785021,20% or more,FALSE,NA,NA,NA
+State Representative District 052,52,Dem,Meaningful (General),18721,5961,Sue Cahill,12316,5869,0.47653458915232216,Rep,0.04611886976291002,Less than 5%,TRUE,289,1,Uncontested
+State Representative District 052,52,Rep,Meaningful (General),18721,5822,David Blom,12316,6437,0.5226534589152322,Rep,0.04611886976291002,Less than 5%,TRUE,49,NA,No Candidates
+State Representative District 052,52,No Party,None-of-the-Above,18721,6766,NA,12316,NA,NA,Rep,0.04611886976291002,Less than 5%,TRUE,NA,NA,NA
+State Representative District 052,52,Lib,None-of-the-Above,18721,137,NA,12316,NA,NA,Rep,0.04611886976291002,Less than 5%,TRUE,1,NA,No Candidates
+State Representative District 052,52,Other,None-of-the-Above,18721,35,NA,12316,NA,NA,Rep,0.04611886976291002,Less than 5%,TRUE,NA,NA,NA
+State Representative District 053,53,Dem,Outnumbered,23141,6848,Tommy Hexter,15658,6745,0.43077021330949034,Rep,0.13692681057606343,10-15%,FALSE,826,0.25423728813559326,20% or more
+State Representative District 053,53,Rep,Unneeded,23141,7470,Dean Fisher,15658,8889,0.5676970238855538,Rep,0.13692681057606343,10-15%,FALSE,1317,0.9286256643887623,Uncontested
+State Representative District 053,53,No Party,Excluded,23141,8674,NA,15658,NA,NA,Rep,0.13692681057606343,10-15%,FALSE,NA,NA,NA
+State Representative District 053,53,Lib,Excluded,23141,116,NA,15658,NA,NA,Rep,0.13692681057606343,10-15%,FALSE,3,NA,No Candidates
+State Representative District 053,53,Other,Excluded,23141,33,NA,15658,NA,NA,Rep,0.13692681057606343,10-15%,FALSE,NA,NA,NA
+State Representative District 054,54,Dem,Outnumbered,22742,4385,NA,13646,NA,NA,Rep,0.9690751868679466,Uncontested,FALSE,33,NA,No Candidates
+State Representative District 054,54,Rep,Meaningful (Primary),22742,11052,Joshua Meggers,13646,13435,0.9845375934339733,Rep,0.9690751868679466,Uncontested,FALSE,1600,0.525625,20% or more
+State Representative District 054,54,No Party,Excluded,22742,7127,NA,13646,NA,NA,Rep,0.9690751868679466,Uncontested,FALSE,NA,NA,NA
+State Representative District 054,54,Lib,Excluded,22742,144,NA,13646,NA,NA,Rep,0.9690751868679466,Uncontested,FALSE,1,NA,No Candidates
+State Representative District 054,54,Other,Excluded,22742,34,NA,13646,NA,NA,Rep,0.9690751868679466,Uncontested,FALSE,NA,NA,NA
+State Representative District 055,55,Dem,Outnumbered,21950,4537,NA,13231,NA,NA,Rep,0.9655354848461946,Uncontested,FALSE,23,NA,No Candidates
+State Representative District 055,55,Rep,Unneeded,21950,9960,Shannon Latham,13231,13003,0.9827677424230973,Rep,0.9655354848461946,Uncontested,FALSE,1565,0.9654952076677317,Uncontested
+State Representative District 055,55,No Party,Excluded,21950,7287,NA,13231,NA,NA,Rep,0.9655354848461946,Uncontested,FALSE,NA,NA,NA
+State Representative District 055,55,Lib,Excluded,21950,136,NA,13231,NA,NA,Rep,0.9655354848461946,Uncontested,FALSE,0,NA,No Candidates
+State Representative District 055,55,Other,Excluded,21950,30,NA,13231,NA,NA,Rep,0.9655354848461946,Uncontested,FALSE,NA,NA,NA
+State Representative District 056,56,Dem,Outnumbered,21651,3742,Kyle Kruse,15066,3876,0.25726802070888094,Rep,0.48393734236028146,20% or more,FALSE,221,0.9909502262443439,Uncontested
+State Representative District 056,56,Rep,Unneeded,21651,10539,Mark I. Thompson,15066,11167,0.7412053630691624,Rep,0.48393734236028146,20% or more,FALSE,2072,0.9787644787644787,Uncontested
+State Representative District 056,56,No Party,Excluded,21651,7214,NA,15066,NA,NA,Rep,0.48393734236028146,20% or more,FALSE,NA,NA,NA
+State Representative District 056,56,Lib,Excluded,21651,126,NA,15066,NA,NA,Rep,0.48393734236028146,20% or more,FALSE,2,NA,No Candidates
+State Representative District 056,56,Other,Excluded,21651,30,NA,15066,NA,NA,Rep,0.48393734236028146,20% or more,FALSE,NA,NA,NA
+State Representative District 057,57,Dem,Outnumbered,23124,4920,Shawn Ellerbroek,18067,7180,0.39740964188852607,Rep,0.20418442464161174,20% or more,FALSE,309,0.9870550161812297,Uncontested
+State Representative District 057,57,Rep,Unneeded,23124,9346,Pat Grassley,18067,10869,0.6015940665301378,Rep,0.20418442464161174,20% or more,FALSE,619,0.951534733441034,Uncontested
+State Representative District 057,57,No Party,Excluded,23124,8717,NA,18067,NA,NA,Rep,0.20418442464161174,20% or more,FALSE,NA,NA,NA
+State Representative District 057,57,Lib,Excluded,23124,117,NA,18067,NA,NA,Rep,0.20418442464161174,20% or more,FALSE,1,NA,No Candidates
+State Representative District 057,57,Other,Excluded,23124,24,NA,18067,NA,NA,Rep,0.20418442464161174,20% or more,FALSE,NA,NA,NA
+State Representative District 058,58,Dem,Outnumbered,22467,5180,Gail Allison,15863,5782,0.36449599697409063,Rep,0.26968417071171913,20% or more,FALSE,271,0.9926199261992621,Uncontested
+State Representative District 058,58,Rep,Unneeded,22467,7904,Charley Thomson,15863,10060,0.6341801676858098,Rep,0.26968417071171913,20% or more,FALSE,484,0.9876033057851239,Uncontested
+State Representative District 058,58,No Party,Excluded,22467,9255,NA,15863,NA,NA,Rep,0.26968417071171913,20% or more,FALSE,NA,NA,NA
+State Representative District 058,58,Lib,Excluded,22467,100,NA,15863,NA,NA,Rep,0.26968417071171913,20% or more,FALSE,0,NA,No Candidates
+State Representative District 058,58,Other,Excluded,22467,28,NA,15863,NA,NA,Rep,0.26968417071171913,20% or more,FALSE,NA,NA,NA
+State Representative District 059,59,Dem,Meaningful (General),22872,6799,Jeremy True,15782,7698,0.48777087821568876,Rep,0.02350779368901279,Less than 5%,TRUE,643,1,Uncontested
+State Representative District 059,59,Rep,Meaningful (General),22872,6650,Christian Hermanson,15782,8069,0.5112786719047016,Rep,0.02350779368901279,Less than 5%,TRUE,1623,0.9815157116451017,Uncontested
+State Representative District 059,59,No Party,None-of-the-Above,22872,9229,NA,15782,NA,NA,Rep,0.02350779368901279,Less than 5%,TRUE,NA,NA,NA
+State Representative District 059,59,Lib,None-of-the-Above,22872,150,NA,15782,NA,NA,Rep,0.02350779368901279,Less than 5%,TRUE,15,NA,No Candidates
+State Representative District 059,59,Other,None-of-the-Above,22872,44,NA,15782,NA,NA,Rep,0.02350779368901279,Less than 5%,TRUE,NA,NA,NA
+State Representative District 060,60,Dem,Outnumbered,23617,5051,NA,14699,NA,NA,Rep,0.9673447173277094,Uncontested,FALSE,41,NA,No Candidates
+State Representative District 060,60,Rep,Meaningful (Primary),23617,9803,Jane E. Bloomingdale,14699,14459,0.9836723586638547,Rep,0.9673447173277094,Uncontested,FALSE,2844,0.21694796061884675,20% or more
+State Representative District 060,60,No Party,Excluded,23617,8575,NA,14699,NA,NA,Rep,0.9673447173277094,Uncontested,FALSE,NA,NA,NA
+State Representative District 060,60,Lib,Excluded,23617,150,NA,14699,NA,NA,Rep,0.9673447173277094,Uncontested,FALSE,17,NA,No Candidates
+State Representative District 060,60,Other,Excluded,23617,38,NA,14699,NA,NA,Rep,0.9673447173277094,Uncontested,FALSE,NA,NA,NA
+State Representative District 061,61,Dem,Unneeded,20308,7975,Timi Brown-Powers,9445,9230,0.9772366331392272,Dem,0.9544732662784543,Uncontested,FALSE,586,1,Uncontested
+State Representative District 061,61,Rep,Outnumbered,20308,5271,NA,9445,NA,NA,Dem,0.9544732662784543,Uncontested,FALSE,44,NA,No Candidates
+State Representative District 061,61,No Party,Excluded,20308,6848,NA,9445,NA,NA,Dem,0.9544732662784543,Uncontested,FALSE,NA,NA,NA
+State Representative District 061,61,Lib,Excluded,20308,172,NA,9445,NA,NA,Dem,0.9544732662784543,Uncontested,FALSE,4,NA,No Candidates
+State Representative District 061,61,Other,Excluded,20308,42,NA,9445,NA,NA,Dem,0.9544732662784543,Uncontested,FALSE,NA,NA,NA
+State Representative District 062,62,Dem,Unneeded,18450,8543,Jerome Amos Jr,9475,7135,0.7530343007915568,Dem,0.5131398416886543,20% or more,FALSE,444,0.9864864864864864,Uncontested
+State Representative District 062,62,Rep,Outnumbered,18450,3232,NA,9475,NA,NA,Dem,0.5131398416886543,20% or more,FALSE,15,NA,No Candidates
+State Representative District 062,62,No Party,Excluded,18450,6466,NA,9475,NA,NA,Dem,0.5131398416886543,20% or more,FALSE,NA,NA,NA
+State Representative District 062,62,Lib,Excluded,18450,152,Ervin Sabic,9475,2273,0.23989445910290239,Dem,0.5131398416886543,20% or more,FALSE,0,NA,No Candidates
+State Representative District 062,62,Other,Excluded,18450,57,NA,9475,NA,NA,Dem,0.5131398416886543,20% or more,FALSE,NA,NA,NA
+State Representative District 063,63,Dem,Outnumbered,23315,6405,Kayla Koether,14838,984,0.06631621512333198,Rep,0.8479579458147999,20% or more,FALSE,32,NA,No Candidates
+State Representative District 063,63,Rep,Unneeded,23315,7859,Michael R. Bergan,14838,13566,0.9142741609381319,Rep,0.8479579458147999,20% or more,FALSE,570,0.9859649122807017,Uncontested
+State Representative District 063,63,No Party,Excluded,23315,8907,NA,14838,NA,NA,Rep,0.8479579458147999,20% or more,FALSE,NA,NA,NA
+State Representative District 063,63,Lib,Excluded,23315,103,NA,14838,NA,NA,Rep,0.8479579458147999,20% or more,FALSE,2,NA,No Candidates
+State Representative District 063,63,Other,Excluded,23315,41,NA,14838,NA,NA,Rep,0.8479579458147999,20% or more,FALSE,NA,NA,NA
+State Representative District 064,64,Dem,Outnumbered,23099,4853,NA,15983,NA,NA,Rep,0.3572545829944316,20% or more,FALSE,28,NA,No Candidates
+State Representative District 064,64,Rep,Meaningful (Primary),23099,10677,Jason Gearhart,15983,10824,0.6772195457673779,Rep,0.3572545829944316,20% or more,FALSE,3464,0.10219399538106239,10-15%
+State Representative District 064,64,No Party,Excluded,23099,7411,NA,15983,NA,NA,Rep,0.3572545829944316,20% or more,FALSE,NA,NA,NA
+State Representative District 064,64,Lib,Excluded,23099,128,NA,15983,NA,NA,Rep,0.3572545829944316,20% or more,FALSE,4,NA,No Candidates
+State Representative District 064,64,Other,Excluded,23099,30,NA,15983,NA,NA,Rep,0.3572545829944316,20% or more,FALSE,NA,NA,NA
+State Representative District 065,65,Dem,Outnumbered,24132,6988,Carolyn Wiezorek,18577,6623,0.356516122086451,Rep,0.28589115573020396,20% or more,FALSE,325,0.9876923076923076,Uncontested
+State Representative District 065,65,Rep,Unneeded,24132,9195,Shannon Lundgren,18577,11934,0.642407277816655,Rep,0.28589115573020396,20% or more,FALSE,678,0.9734513274336283,Uncontested
+State Representative District 065,65,No Party,Excluded,24132,7782,NA,18577,NA,NA,Rep,0.28589115573020396,20% or more,FALSE,NA,NA,NA
+State Representative District 065,65,Lib,Excluded,24132,141,NA,18577,NA,NA,Rep,0.28589115573020396,20% or more,FALSE,1,NA,No Candidates
+State Representative District 065,65,Other,Excluded,24132,26,NA,18577,NA,NA,Rep,0.28589115573020396,20% or more,FALSE,NA,NA,NA
+State Representative District 066,66,Dem,Outnumbered,23136,5217,Andy McKean,17224,7670,0.44530887134231306,Rep,0.10862749651648856,10-15%,FALSE,326,1,Uncontested
+State Representative District 066,66,Rep,Unneeded,23136,8893,Steven P Bradley,17224,9541,0.5539363678588016,Rep,0.10862749651648856,10-15%,FALSE,1609,0.9502796768178994,Uncontested
+State Representative District 066,66,No Party,Excluded,23136,8905,NA,17224,NA,NA,Rep,0.10862749651648856,10-15%,FALSE,NA,NA,NA
+State Representative District 066,66,Lib,Excluded,23136,104,NA,17224,NA,NA,Rep,0.10862749651648856,10-15%,FALSE,4,NA,No Candidates
+State Representative District 066,66,Other,Excluded,23136,17,NA,17224,NA,NA,Rep,0.10862749651648856,10-15%,FALSE,NA,NA,NA
+State Representative District 067,67,Dem,Outnumbered,22781,5019,NA,14443,NA,NA,Rep,0.9633040227099634,Uncontested,FALSE,22,NA,No Candidates
+State Representative District 067,67,Rep,Unneeded,22781,8565,Craig Johnson,14443,14178,0.9816520113549817,Rep,0.9633040227099634,Uncontested,FALSE,548,0.9927007299270072,Uncontested
+State Representative District 067,67,No Party,Excluded,22781,9059,NA,14443,NA,NA,Rep,0.9633040227099634,Uncontested,FALSE,NA,NA,NA
+State Representative District 067,67,Lib,Excluded,22781,117,NA,14443,NA,NA,Rep,0.9633040227099634,Uncontested,FALSE,2,NA,No Candidates
+State Representative District 067,67,Other,Excluded,22781,21,NA,14443,NA,NA,Rep,0.9633040227099634,Uncontested,FALSE,NA,NA,NA
+State Representative District 068,68,Dem,Outnumbered,20816,4958,Tim O'Brien,15406,5037,0.32695053875113594,Rep,0.34519018564195764,20% or more,FALSE,23,NA,No Candidates
+State Representative District 068,68,Rep,Unneeded,20816,7593,Chad Ingels,15406,10355,0.6721407243930936,Rep,0.34519018564195764,20% or more,FALSE,1202,0.9800332778702163,Uncontested
+State Representative District 068,68,No Party,Excluded,20816,8110,NA,15406,NA,NA,Rep,0.34519018564195764,20% or more,FALSE,NA,NA,NA
+State Representative District 068,68,Lib,Excluded,20816,125,NA,15406,NA,NA,Rep,0.34519018564195764,20% or more,FALSE,1,NA,No Candidates
+State Representative District 068,68,Other,Excluded,20816,30,NA,15406,NA,NA,Rep,0.34519018564195764,20% or more,FALSE,NA,NA,NA
+State Representative District 069,69,Dem,Outnumbered,23372,6687,Randy Meier,15031,6454,0.42937928281551463,Rep,0.1406426718115894,10-15%,FALSE,256,0.984375,Uncontested
+State Representative District 069,69,Rep,Unneeded,23372,6612,Tom Determann,15031,8568,0.570021954627104,Rep,0.1406426718115894,10-15%,FALSE,568,0.9859154929577465,Uncontested
+State Representative District 069,69,No Party,Excluded,23372,9877,NA,15031,NA,NA,Rep,0.1406426718115894,10-15%,FALSE,NA,NA,NA
+State Representative District 069,69,Lib,Excluded,23372,143,NA,15031,NA,NA,Rep,0.1406426718115894,10-15%,FALSE,1,NA,No Candidates
+State Representative District 069,69,Other,Excluded,23372,53,NA,15031,NA,NA,Rep,0.1406426718115894,10-15%,FALSE,NA,NA,NA
+State Representative District 070,70,Dem,Outnumbered,23913,5641,Kay Pence,17391,6708,0.3857167500431258,Rep,0.22730147777586107,20% or more,FALSE,311,0.9871382636655948,Uncontested
+State Representative District 070,70,Rep,Unneeded,23913,8791,Norlin Mommsen,17391,10661,0.6130182278189868,Rep,0.22730147777586107,20% or more,FALSE,1276,0.9608150470219436,Uncontested
+State Representative District 070,70,No Party,Excluded,23913,9306,NA,17391,NA,NA,Rep,0.22730147777586107,20% or more,FALSE,NA,NA,NA
+State Representative District 070,70,Lib,Excluded,23913,128,NA,17391,NA,NA,Rep,0.22730147777586107,20% or more,FALSE,3,NA,No Candidates
+State Representative District 070,70,Other,Excluded,23913,47,NA,17391,NA,NA,Rep,0.22730147777586107,20% or more,FALSE,NA,NA,NA
+State Representative District 071,71,Dem,Unneeded,22436,8895,Lindsay James,14212,7971,0.5608640585420771,Dem,0.12320574162679426,10-15%,FALSE,554,0.9855595667870036,Uncontested
+State Representative District 071,71,Rep,Outnumbered,22436,5675,James W. McClain,14212,6220,0.43765831691528284,Dem,0.12320574162679426,10-15%,FALSE,32,NA,No Candidates
+State Representative District 071,71,No Party,Excluded,22436,7550,NA,14212,NA,NA,Dem,0.12320574162679426,10-15%,FALSE,NA,NA,NA
+State Representative District 071,71,Lib,Excluded,22436,261,NA,14212,NA,NA,Dem,0.12320574162679426,10-15%,FALSE,2,NA,No Candidates
+State Representative District 071,71,Other,Excluded,22436,55,NA,14212,NA,NA,Dem,0.12320574162679426,10-15%,FALSE,NA,NA,NA
+State Representative District 072,72,Dem,Meaningful (General),22790,8566,Charles Isenhart,16114,7513,0.4662405361797195,Rep,0.06590542385503284,5-10%,TRUE,644,0.9875776397515528,Uncontested
+State Representative District 072,72,Rep,Meaningful (General),22790,6837,Jennifer J. Smith,16114,8575,0.5321459600347523,Rep,0.06590542385503284,5-10%,TRUE,1029,0.5413022351797863,20% or more
+State Representative District 072,72,No Party,None-of-the-Above,22790,7130,NA,16114,NA,NA,Rep,0.06590542385503284,5-10%,TRUE,NA,NA,NA
+State Representative District 072,72,Lib,None-of-the-Above,22790,205,NA,16114,NA,NA,Rep,0.06590542385503284,5-10%,TRUE,1,NA,No Candidates
+State Representative District 072,72,Other,None-of-the-Above,22790,52,NA,16114,NA,NA,Rep,0.06590542385503284,5-10%,TRUE,NA,NA,NA
+State Representative District 073,73,Dem,Unneeded,23952,7446,Elizabeth Wilson,12787,12213,0.9551106592633143,Dem,0.9102213185266286,Uncontested,FALSE,305,1,Uncontested
+State Representative District 073,73,Rep,Outnumbered,23952,7490,NA,12787,NA,NA,Dem,0.9102213185266286,Uncontested,FALSE,40,NA,No Candidates
+State Representative District 073,73,No Party,Excluded,23952,8793,NA,12787,NA,NA,Dem,0.9102213185266286,Uncontested,FALSE,NA,NA,NA
+State Representative District 073,73,Lib,Excluded,23952,193,NA,12787,NA,NA,Dem,0.9102213185266286,Uncontested,FALSE,1,NA,No Candidates
+State Representative District 073,73,Other,Excluded,23952,30,NA,12787,NA,NA,Dem,0.9102213185266286,Uncontested,FALSE,NA,NA,NA
+State Representative District 074,74,Dem,Unneeded,22441,8203,Eric Gjerde,11795,11368,0.9637982195845697,Dem,0.9275964391691394,Uncontested,FALSE,387,0.9948320413436693,Uncontested
+State Representative District 074,74,Rep,Outnumbered,22441,5790,NA,11795,NA,NA,Dem,0.9275964391691394,Uncontested,FALSE,35,NA,No Candidates
+State Representative District 074,74,No Party,Excluded,22441,8169,NA,11795,NA,NA,Dem,0.9275964391691394,Uncontested,FALSE,NA,NA,NA
+State Representative District 074,74,Lib,Excluded,22441,228,NA,11795,NA,NA,Dem,0.9275964391691394,Uncontested,FALSE,1,NA,No Candidates
+State Representative District 074,74,Other,Excluded,22441,51,NA,11795,NA,NA,Dem,0.9275964391691394,Uncontested,FALSE,NA,NA,NA
+State Representative District 075,75,Dem,Unneeded,21947,7648,Bob Kressig,11800,11529,0.9770338983050847,Dem,0.9540677966101694,Uncontested,FALSE,824,0.9878640776699028,Uncontested
+State Representative District 075,75,Rep,Outnumbered,21947,6325,NA,11800,NA,NA,Dem,0.9540677966101694,Uncontested,FALSE,35,NA,No Candidates
+State Representative District 075,75,No Party,Excluded,21947,7738,NA,11800,NA,NA,Dem,0.9540677966101694,Uncontested,FALSE,NA,NA,NA
+State Representative District 075,75,Lib,Excluded,21947,188,NA,11800,NA,NA,Dem,0.9540677966101694,Uncontested,FALSE,0,NA,No Candidates
+State Representative District 075,75,Other,Excluded,21947,48,NA,11800,NA,NA,Dem,0.9540677966101694,Uncontested,FALSE,NA,NA,NA
+State Representative District 076,76,Dem,Outnumbered,23342,6276,Jarred Johnston,17128,6762,0.3947921531994395,Rep,0.20930639887902847,20% or more,FALSE,501,0.996007984031936,Uncontested
+State Representative District 076,76,Rep,Unneeded,23342,8379,Derek Wulf,17128,10347,0.604098552078468,Rep,0.20930639887902847,20% or more,FALSE,1291,0.9814097598760652,Uncontested
+State Representative District 076,76,No Party,Excluded,23342,8464,NA,17128,NA,NA,Rep,0.20930639887902847,20% or more,FALSE,NA,NA,NA
+State Representative District 076,76,Lib,Excluded,23342,173,NA,17128,NA,NA,Rep,0.20930639887902847,20% or more,FALSE,1,NA,No Candidates
+State Representative District 076,76,Other,Excluded,23342,50,NA,17128,NA,NA,Rep,0.20930639887902847,20% or more,FALSE,NA,NA,NA
+State Representative District 077,77,Dem,Unneeded,20169,7496,Jeff Cooling,9853,9523,0.9665076626408201,Dem,0.9330153252816402,Uncontested,FALSE,250,0.992,Uncontested
+State Representative District 077,77,Rep,Outnumbered,20169,4556,NA,9853,NA,NA,Dem,0.9330153252816402,Uncontested,FALSE,14,NA,No Candidates
+State Representative District 077,77,No Party,Excluded,20169,7832,NA,9853,NA,NA,Dem,0.9330153252816402,Uncontested,FALSE,NA,NA,NA
+State Representative District 077,77,Lib,Excluded,20169,209,NA,9853,NA,NA,Dem,0.9330153252816402,Uncontested,FALSE,1,NA,No Candidates
+State Representative District 077,77,Other,Excluded,20169,76,NA,9853,NA,NA,Dem,0.9330153252816402,Uncontested,FALSE,NA,NA,NA
+State Representative District 078,78,Dem,Unneeded,21684,9760,Sami Scheetz,11168,10803,0.967317335243553,Dem,0.934634670487106,Uncontested,FALSE,406,0.9704433497536946,Uncontested
+State Representative District 078,78,Rep,Outnumbered,21684,4280,NA,11168,NA,NA,Dem,0.934634670487106,Uncontested,FALSE,37,NA,No Candidates
+State Representative District 078,78,No Party,Excluded,21684,7324,NA,11168,NA,NA,Dem,0.934634670487106,Uncontested,FALSE,NA,NA,NA
+State Representative District 078,78,Lib,Excluded,21684,233,NA,11168,NA,NA,Dem,0.934634670487106,Uncontested,FALSE,3,NA,No Candidates
+State Representative District 078,78,Other,Excluded,21684,87,NA,11168,NA,NA,Dem,0.934634670487106,Uncontested,FALSE,NA,NA,NA
+State Representative District 079,79,Dem,Unneeded,21662,8385,Tracy Ehlert,15188,9222,0.6071898867526995,Dem,0.21563076112720564,20% or more,FALSE,386,1,Uncontested
+State Representative District 079,79,Rep,Outnumbered,21662,5011,Barclay Woerner,15188,5947,0.39155912562549383,Dem,0.21563076112720564,20% or more,FALSE,23,NA,No Candidates
+State Representative District 079,79,No Party,Excluded,21662,8012,NA,15188,NA,NA,Dem,0.21563076112720564,20% or more,FALSE,NA,NA,NA
+State Representative District 079,79,Lib,Excluded,21662,200,NA,15188,NA,NA,Dem,0.21563076112720564,20% or more,FALSE,0,NA,No Candidates
+State Representative District 079,79,Other,Excluded,21662,54,NA,15188,NA,NA,Dem,0.21563076112720564,20% or more,FALSE,NA,NA,NA
+State Representative District 080,80,Dem,Meaningful (General),23556,7881,Aime J. Wichtendahl,17329,9070,0.5234000807894281,Dem,0.047781176063246555,Less than 5%,TRUE,387,0.979328165374677,Uncontested
+State Representative District 080,80,Rep,Meaningful (General),23556,7101,John Thompson,17329,8242,0.47561890472618157,Dem,0.047781176063246555,Less than 5%,TRUE,417,0.9664268585131894,Uncontested
+State Representative District 080,80,No Party,None-of-the-Above,23556,8304,NA,17329,NA,NA,Dem,0.047781176063246555,Less than 5%,TRUE,NA,NA,NA
+State Representative District 080,80,Lib,None-of-the-Above,23556,199,NA,17329,NA,NA,Dem,0.047781176063246555,Less than 5%,TRUE,1,NA,No Candidates
+State Representative District 080,80,Other,None-of-the-Above,23556,71,NA,17329,NA,NA,Dem,0.047781176063246555,Less than 5%,TRUE,NA,NA,NA
+State Representative District 081,81,Dem,Unneeded,23318,7690,Daniel Gosa,10382,9806,0.9445193604315161,Dem,0.8890387208630322,Uncontested,FALSE,479,0.9832985386221293,Uncontested
+State Representative District 081,81,Rep,Outnumbered,23318,5990,NA,10382,NA,NA,Dem,0.8890387208630322,Uncontested,FALSE,58,NA,No Candidates
+State Representative District 081,81,No Party,Excluded,23318,9399,NA,10382,NA,NA,Dem,0.8890387208630322,Uncontested,FALSE,NA,NA,NA
+State Representative District 081,81,Lib,Excluded,23318,190,NA,10382,NA,NA,Dem,0.8890387208630322,Uncontested,FALSE,3,NA,No Candidates
+State Representative District 081,81,Other,Excluded,23318,49,NA,10382,NA,NA,Dem,0.8890387208630322,Uncontested,FALSE,NA,NA,NA
+State Representative District 082,82,Dem,Outnumbered,22556,5467,Phil Wiese,17037,6716,0.3942008569583847,Rep,0.21107002406526976,20% or more,FALSE,17,NA,No Candidates
+State Representative District 082,82,Rep,Unneeded,22556,8296,Bobby Kaufmann,17037,10312,0.6052708810236545,Rep,0.21107002406526976,20% or more,FALSE,1326,0.9758672699849171,Uncontested
+State Representative District 082,82,No Party,Excluded,22556,8607,NA,17037,NA,NA,Rep,0.21107002406526976,20% or more,FALSE,NA,NA,NA
+State Representative District 082,82,Lib,Excluded,22556,142,NA,17037,NA,NA,Rep,0.21107002406526976,20% or more,FALSE,0,NA,No Candidates
+State Representative District 082,82,Other,Excluded,22556,44,NA,17037,NA,NA,Rep,0.21107002406526976,20% or more,FALSE,NA,NA,NA
+State Representative District 083,83,Dem,Outnumbered,25093,7316,Kent McNally,19282,7947,0.41214604294160356,Rep,0.17498184835597969,15-20%,FALSE,309,0.9805825242718447,Uncontested
+State Representative District 083,83,Rep,Unneeded,25093,8387,Cindy Golding,19282,11321,0.5871278912975832,Rep,0.17498184835597969,15-20%,FALSE,412,0.9757281553398058,Uncontested
+State Representative District 083,83,No Party,Excluded,25093,9169,NA,19282,NA,NA,Rep,0.17498184835597969,15-20%,FALSE,NA,NA,NA
+State Representative District 083,83,Lib,Excluded,25093,200,NA,19282,NA,NA,Rep,0.17498184835597969,15-20%,FALSE,1,NA,No Candidates
+State Representative District 083,83,Other,Excluded,25093,21,NA,19282,NA,NA,Rep,0.17498184835597969,15-20%,FALSE,NA,NA,NA
+State Representative District 084,84,Dem,Outnumbered,23434,5146,NA,16021,NA,NA,Rep,0.46326696211222773,20% or more,FALSE,31,NA,No Candidates
+State Representative District 084,84,Rep,Unneeded,23434,8844,Thomas Gerhold,16021,11672,0.7285437862805069,Rep,0.46326696211222773,20% or more,FALSE,1816,0.9812775330396475,Uncontested
+State Representative District 084,84,No Party,Excluded,23434,9249,NA,16021,NA,NA,Rep,0.46326696211222773,20% or more,FALSE,NA,NA,NA
+State Representative District 084,84,Lib,Excluded,23434,164,Ashley Meredith,16021,4250,0.26527682416827914,Rep,0.46326696211222773,20% or more,FALSE,20,1,Uncontested
+State Representative District 084,84,Other,Excluded,23434,31,NA,16021,NA,NA,Rep,0.46326696211222773,20% or more,FALSE,NA,NA,NA
+State Representative District 085,85,Dem,Unneeded,24526,10096,Amy Nielsen,14120,13794,0.9769121813031162,Dem,0.9538243626062324,Uncontested,FALSE,1032,0.9786821705426356,Uncontested
+State Representative District 085,85,Rep,Outnumbered,24526,5335,NA,14120,NA,NA,Dem,0.9538243626062324,Uncontested,FALSE,28,NA,No Candidates
+State Representative District 085,85,No Party,Excluded,24526,8851,NA,14120,NA,NA,Dem,0.9538243626062324,Uncontested,FALSE,NA,NA,NA
+State Representative District 085,85,Lib,Excluded,24526,201,NA,14120,NA,NA,Dem,0.9538243626062324,Uncontested,FALSE,4,NA,No Candidates
+State Representative District 085,85,Other,Excluded,24526,43,NA,14120,NA,NA,Dem,0.9538243626062324,Uncontested,FALSE,NA,NA,NA
+State Representative District 086,86,Dem,Unneeded,23671,11634,Dave Jacoby,16504,12544,0.7600581677169171,Dem,0.5216917111003394,20% or more,FALSE,1098,0.9927140255009108,Uncontested
+State Representative District 086,86,Rep,Outnumbered,23671,3680,Stephen Knoner,16504,3934,0.2383664566165778,Dem,0.5216917111003394,20% or more,FALSE,25,NA,No Candidates
+State Representative District 086,86,No Party,Excluded,23671,8147,NA,16504,NA,NA,Dem,0.5216917111003394,20% or more,FALSE,NA,NA,NA
+State Representative District 086,86,Lib,Excluded,23671,150,NA,16504,NA,NA,Dem,0.5216917111003394,20% or more,FALSE,0,NA,No Candidates
+State Representative District 086,86,Other,Excluded,23671,60,NA,16504,NA,NA,Dem,0.5216917111003394,20% or more,FALSE,NA,NA,NA
+State Representative District 087,87,Dem,Outnumbered,21466,5859,Thomas O'Donnell,14287,5655,0.3958143767060964,Rep,0.1796038356547911,15-20%,FALSE,29,NA,No Candidates
+State Representative District 087,87,Rep,Unneeded,21466,8470,Jeff Shipley,14287,8221,0.5754182123608875,Rep,0.1796038356547911,15-20%,FALSE,1828,0.9562363238512035,Uncontested
+State Representative District 087,87,No Party,Excluded,21466,6927,NA,14287,NA,NA,Rep,0.1796038356547911,15-20%,FALSE,NA,NA,NA
+State Representative District 087,87,Lib,Excluded,21466,157,NA,14287,NA,NA,Rep,0.1796038356547911,15-20%,FALSE,3,NA,No Candidates
+State Representative District 087,87,Other,Excluded,21466,53,NA,14287,NA,NA,Rep,0.1796038356547911,15-20%,FALSE,NA,NA,NA
+State Representative District 088,88,Dem,Outnumbered,21223,3936,NA,12475,NA,NA,Rep,0.9544689378757516,Uncontested,FALSE,16,NA,No Candidates
+State Representative District 088,88,Rep,Unneeded,21223,10520,Helena Hayes,12475,12191,0.9772344689378758,Rep,0.9544689378757516,Uncontested,FALSE,1822,0.969264544456641,Uncontested
+State Representative District 088,88,No Party,Excluded,21223,6567,NA,12475,NA,NA,Rep,0.9544689378757516,Uncontested,FALSE,NA,NA,NA
+State Representative District 088,88,Lib,Excluded,21223,173,NA,12475,NA,NA,Rep,0.9544689378757516,Uncontested,FALSE,2,NA,No Candidates
+State Representative District 088,88,Other,Excluded,21223,27,NA,12475,NA,NA,Rep,0.9544689378757516,Uncontested,FALSE,NA,NA,NA
+State Representative District 089,89,Dem,Meaningful (Primary),23334,12319,Elinor A. Levin,12100,11945,0.9871900826446282,Dem,0.9743801652892563,Uncontested,FALSE,1391,0.8260244428468727,20% or more
+State Representative District 089,89,Rep,Outnumbered,23334,2873,NA,12100,NA,NA,Dem,0.9743801652892563,Uncontested,FALSE,14,NA,No Candidates
+State Representative District 089,89,No Party,Excluded,23334,7864,NA,12100,NA,NA,Dem,0.9743801652892563,Uncontested,FALSE,NA,NA,NA
+State Representative District 089,89,Lib,Excluded,23334,180,NA,12100,NA,NA,Dem,0.9743801652892563,Uncontested,FALSE,2,NA,No Candidates
+State Representative District 089,89,Other,Excluded,23334,98,NA,12100,NA,NA,Dem,0.9743801652892563,Uncontested,FALSE,NA,NA,NA
+State Representative District 090,90,Dem,Unneeded,24839,14052,Adam Zabner,14696,14477,0.9850979858464889,Dem,0.9701959716929778,Uncontested,FALSE,1902,0.9831756046267088,Uncontested
+State Representative District 090,90,Rep,Outnumbered,24839,3346,NA,14696,NA,NA,Dem,0.9701959716929778,Uncontested,FALSE,16,NA,No Candidates
+State Representative District 090,90,No Party,Excluded,24839,7209,NA,14696,NA,NA,Dem,0.9701959716929778,Uncontested,FALSE,NA,NA,NA
+State Representative District 090,90,Lib,Excluded,24839,162,NA,14696,NA,NA,Dem,0.9701959716929778,Uncontested,FALSE,3,NA,No Candidates
+State Representative District 090,90,Other,Excluded,24839,70,NA,14696,NA,NA,Dem,0.9701959716929778,Uncontested,FALSE,NA,NA,NA
+State Representative District 091,91,Dem,Meaningful (General),25502,6751,Jay Gorsh,19424,8762,0.45109143327841844,Rep,0.09699341021416802,5-10%,TRUE,543,0.9852670349907919,Uncontested
+State Representative District 091,91,Rep,Meaningful (General),25502,9200,Judd Lawler,19424,10646,0.5480848434925865,Rep,0.09699341021416802,5-10%,TRUE,1820,0.5813186813186813,20% or more
+State Representative District 091,91,No Party,None-of-the-Above,25502,9337,NA,19424,NA,NA,Rep,0.09699341021416802,5-10%,TRUE,NA,NA,NA
+State Representative District 091,91,Lib,None-of-the-Above,25502,182,NA,19424,NA,NA,Rep,0.09699341021416802,5-10%,TRUE,3,NA,No Candidates
+State Representative District 091,91,Other,None-of-the-Above,25502,32,NA,19424,NA,NA,Rep,0.09699341021416802,5-10%,TRUE,NA,NA,NA
+State Representative District 092,92,Dem,Outnumbered,21506,5607,Anna Banowsky,15489,6073,0.39208470527471107,Rep,0.2141519788236813,20% or more,FALSE,523,0.9885277246653921,Uncontested
+State Representative District 092,92,Rep,Unneeded,21506,8372,Heather Hora,15489,9390,0.6062366840983924,Rep,0.2141519788236813,20% or more,FALSE,810,0.9654320987654321,Uncontested
+State Representative District 092,92,No Party,Excluded,21506,7340,NA,15489,NA,NA,Rep,0.2141519788236813,20% or more,FALSE,NA,NA,NA
+State Representative District 092,92,Lib,Excluded,21506,150,NA,15489,NA,NA,Rep,0.2141519788236813,20% or more,FALSE,3,NA,No Candidates
+State Representative District 092,92,Other,Excluded,21506,37,NA,15489,NA,NA,Rep,0.2141519788236813,20% or more,FALSE,NA,NA,NA
+State Representative District 093,93,Dem,Outnumbered,26540,6760,Mindy Smith-Pace,19335,7681,0.3972588569950866,Rep,0.20424101370571507,20% or more,FALSE,537,0.9851024208566108,Uncontested
+State Representative District 093,93,Rep,Unneeded,26540,9448,Gary Mohr,19335,11630,0.6014998707008017,Rep,0.20424101370571507,20% or more,FALSE,1272,0.9716981132075471,Uncontested
+State Representative District 093,93,No Party,Excluded,26540,10112,NA,19335,NA,NA,Rep,0.20424101370571507,20% or more,FALSE,NA,NA,NA
+State Representative District 093,93,Lib,Excluded,26540,186,NA,19335,NA,NA,Rep,0.20424101370571507,20% or more,FALSE,2,NA,No Candidates
+State Representative District 093,93,Other,Excluded,26540,34,NA,19335,NA,NA,Rep,0.20424101370571507,20% or more,FALSE,NA,NA,NA
+State Representative District 094,94,Dem,Outnumbered,24823,6889,Tracy J. Jones,17643,7465,0.4231139828827297,Rep,0.15224168225358492,15-20%,FALSE,483,0.9958592132505175,Uncontested
+State Representative District 094,94,Rep,Unneeded,24823,8141,Mike Vondran,17643,10151,0.5753556651363146,Rep,0.15224168225358492,15-20%,FALSE,1145,0.9563318777292575,Uncontested
+State Representative District 094,94,No Party,Excluded,24823,9555,NA,17643,NA,NA,Rep,0.15224168225358492,15-20%,FALSE,NA,NA,NA
+State Representative District 094,94,Lib,Excluded,24823,189,NA,17643,NA,NA,Rep,0.15224168225358492,15-20%,FALSE,3,NA,No Candidates
+State Representative District 094,94,Other,Excluded,24823,49,NA,17643,NA,NA,Rep,0.15224168225358492,15-20%,FALSE,NA,NA,NA
+State Representative District 095,95,Dem,Outnumbered,23124,4875,Jeff Poulter,15841,4523,0.28552490373082506,Rep,0.42680386339246257,20% or more,FALSE,220,1,Uncontested
+State Representative District 095,95,Rep,Unneeded,23124,9596,Taylor Collins,15841,11284,0.7123287671232876,Rep,0.42680386339246257,20% or more,FALSE,1208,0.9850993377483444,Uncontested
+State Representative District 095,95,No Party,Excluded,23124,8473,NA,15841,NA,NA,Rep,0.42680386339246257,20% or more,FALSE,NA,NA,NA
+State Representative District 095,95,Lib,Excluded,23124,154,NA,15841,NA,NA,Rep,0.42680386339246257,20% or more,FALSE,1,NA,No Candidates
+State Representative District 095,95,Other,Excluded,23124,26,NA,15841,NA,NA,Rep,0.42680386339246257,20% or more,FALSE,NA,NA,NA
+State Representative District 096,96,Dem,Outnumbered,21444,5860,Mandy Moody,13739,5649,0.4111652958730621,Rep,0.17628648373244044,15-20%,FALSE,252,1,Uncontested
+State Representative District 096,96,Rep,Unneeded,21444,7044,Mark Cisneros,13739,8071,0.5874517796055025,Rep,0.17628648373244044,15-20%,FALSE,850,0.9811764705882353,Uncontested
+State Representative District 096,96,No Party,Excluded,21444,8281,NA,13739,NA,NA,Rep,0.17628648373244044,15-20%,FALSE,NA,NA,NA
+State Representative District 096,96,Lib,Excluded,21444,181,NA,13739,NA,NA,Rep,0.17628648373244044,15-20%,FALSE,0,NA,No Candidates
+State Representative District 096,96,Other,Excluded,21444,78,NA,13739,NA,NA,Rep,0.17628648373244044,15-20%,FALSE,NA,NA,NA
+State Representative District 097,97,Dem,Unneeded,22443,8481,Ken Croken,13199,7753,0.5873929843169937,Dem,0.176073944995833,15-20%,FALSE,574,0.9895470383275262,Uncontested
+State Representative District 097,97,Rep,Outnumbered,22443,4586,Josue Rodriguez,13199,5429,0.4113190393211607,Dem,0.176073944995833,15-20%,FALSE,504,0.9563492063492063,Uncontested
+State Representative District 097,97,No Party,Excluded,22443,9098,NA,13199,NA,NA,Dem,0.176073944995833,15-20%,FALSE,NA,NA,NA
+State Representative District 097,97,Lib,Excluded,22443,220,NA,13199,NA,NA,Dem,0.176073944995833,15-20%,FALSE,2,NA,No Candidates
+State Representative District 097,97,Other,Excluded,22443,58,NA,13199,NA,NA,Dem,0.176073944995833,15-20%,FALSE,NA,NA,NA
+State Representative District 098,98,Dem,Meaningful (General),22558,7555,Monica Kurth,13154,6585,0.5006081800212863,Dem,0.0034210126197354307,Less than 5%,TRUE,362,0.9944751381215469,Uncontested
+State Representative District 098,98,Rep,Meaningful (General),22558,5228,Nathan Ramker,13154,6540,0.49718716740155083,Dem,0.0034210126197354307,Less than 5%,TRUE,46,NA,No Candidates
+State Representative District 098,98,No Party,None-of-the-Above,22558,9481,NA,13154,NA,NA,Dem,0.0034210126197354307,Less than 5%,TRUE,NA,NA,NA
+State Representative District 098,98,Lib,None-of-the-Above,22558,220,NA,13154,NA,NA,Dem,0.0034210126197354307,Less than 5%,TRUE,4,NA,No Candidates
+State Representative District 098,98,Other,None-of-the-Above,22558,74,NA,13154,NA,NA,Dem,0.0034210126197354307,Less than 5%,TRUE,NA,NA,NA
+State Representative District 099,99,Dem,Outnumbered,22806,7790,Jim Beres,13955,6162,0.44156216409888926,Rep,0.11415263346470805,10-15%,FALSE,229,0.9737991266375545,Uncontested
+State Representative District 099,99,Rep,Unneeded,22806,6412,Matthew Rinker,13955,7755,0.5557147975635973,Rep,0.11415263346470805,10-15%,FALSE,495,0.9676767676767677,Uncontested
+State Representative District 099,99,No Party,Excluded,22806,8344,NA,13955,NA,NA,Rep,0.11415263346470805,10-15%,FALSE,NA,NA,NA
+State Representative District 099,99,Lib,Excluded,22806,207,NA,13955,NA,NA,Rep,0.11415263346470805,10-15%,FALSE,3,NA,No Candidates
+State Representative District 099,99,Other,Excluded,22806,53,NA,13955,NA,NA,Rep,0.11415263346470805,10-15%,FALSE,NA,NA,NA
+State Representative District 100,100,Dem,Outnumbered,21773,6888,NA,14001,NA,NA,Rep,0.3554746089565031,20% or more,FALSE,39,NA,No Candidates
+State Representative District 100,100,Rep,Unneeded,21773,6748,Martin L. Graber,14001,9466,0.6760945646739519,Rep,0.3554746089565031,20% or more,FALSE,1193,0.9731768650461023,Uncontested
+State Representative District 100,100,No Party,Excluded,21773,7959,NA,14001,NA,NA,Rep,0.3554746089565031,20% or more,FALSE,NA,NA,NA
+State Representative District 100,100,Lib,Excluded,21773,143,NA,14001,NA,NA,Rep,0.3554746089565031,20% or more,FALSE,3,NA,No Candidates
+State Representative District 100,100,Other,Excluded,21773,35,NA,14001,NA,NA,Rep,0.3554746089565031,20% or more,FALSE,NA,NA,NA

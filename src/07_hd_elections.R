@@ -45,32 +45,43 @@ districts <- registration |>
   left_join(
     house_general_long |>
       ungroup() |>
-      mutate(party = str_remove(party, "\\."), general_votes = value, general_vote_pct = vote_pct) |>
-      select(district_num, party, candidate, general_votes, general_vote_pct)
+      mutate(party = str_remove(party, "\\."), gen_party = value, gen_vote_pct = vote_pct) |>
+      select(district_num, party, candidate, gen_party, gen_vote_pct)
   ) |>
   left_join(
     house_general_wide |> 
       ungroup() |>
       mutate(
-        winning_party = first_vote_party |> str_remove("\\."),
-        voters_total = total_voters,
-        voters_winning = first_vote_num,
-        margin = margin,
-        margin_category = margin_category,
-        competitive = margin <= 0.1
+        gen_winning_party = first_vote_party |> str_remove("\\."),
+        gen_total = total_voters,
+        gen_margin = margin,
+        gen_margin_category = margin_category,
+        gen_competitive = margin <= 0.1
       ) |>
-      select(district_num, voters_total, winning_party, margin, margin_category, competitive)
+      select(district_num, gen_total, gen_winning_party, gen_margin, gen_margin_category, gen_competitive)
+  ) |>
+  left_join(
+    house_primary_wide |>
+      ungroup() |>
+      mutate(
+        party = party |> str_remove("\\."),
+        prim_voters = total_voters,
+        prim_margin = margin,
+        prim_margin_category = margin_category
+      ) |>
+      select(district_num, party, prim_voters, prim_margin, prim_margin_category)
   )
 
 
 districts <- districts |>
   mutate(
     voter_classification = case_when(
-      competitive == TRUE & party %in% c("Dem", "Rep") ~ "Meaningful",
-      competitive == TRUE & !(party %in% c("Dem", "Rep")) ~ "None-of-the-Above",
-      competitive == FALSE & party == winning_party ~ "Unneeded",
-      competitive == FALSE & party != winning_party & (party %in% c("Dem", "Rep")) ~ "Outnumbered",
-      competitive == FALSE & party != winning_party & !(party %in% c("Dem", "Rep")) ~ "Excluded"
+      gen_competitive == TRUE & party %in% c("Dem", "Rep") ~ "Meaningful (General)",
+      gen_competitive == FALSE & party == gen_winning_party & prim_margin_category != "Uncontested" ~ "Meaningful (Primary)",
+      gen_competitive == TRUE & !(party %in% c("Dem", "Rep")) ~ "None-of-the-Above",
+      gen_competitive == FALSE & party == gen_winning_party ~ "Unneeded",
+      gen_competitive == FALSE & party != gen_winning_party & (party %in% c("Dem", "Rep")) ~ "Outnumbered",
+      gen_competitive == FALSE & party != gen_winning_party & !(party %in% c("Dem", "Rep")) ~ "Excluded"
     )
   )
 
@@ -81,7 +92,19 @@ districts |>
     reg = sum(reg_party)
   ) |>
   mutate(
-    reg_pct = reg / sum(reg)
+    reg_pct = (reg / sum(reg)) * 100
+  ) |>
+  arrange(desc(reg_pct))
+
+
+districts <- districts |>
+  select(
+    state_representative_district, district_num, party, voter_classification,
+    reg_total, reg_party, 
+    candidate, gen_total, gen_party, gen_vote_pct, gen_winning_party, gen_margin, gen_margin_category, gen_competitive,
+    prim_voters, prim_margin, prim_margin_category
   )
 
 
+write_csv(districts, "data/house_district_voter_classification.csv")
+write_rds(districts, "data/house_district_voter_classification.rds")
