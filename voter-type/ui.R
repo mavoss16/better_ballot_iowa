@@ -25,7 +25,8 @@ page_fluid(
         inputId = "legislator_input", 
         label = "Select Your House Representative",
         choices = legislators$name_num,
-        selected = NULL
+        selected = NULL,
+        options = pickerOptions(liveSearch = TRUE)
       ),
       h4("OR"),
       searchInput(
@@ -47,5 +48,12 @@ page_fluid(
   
   # textOutput("district_info"),
   # textOutput("voter_class"),
-  uiOutput("voter_class_ui")
+  uiOutput("voter_class_ui"),
+  br(),
+  layout_columns(
+    col_widths = c(4, 4, 4),
+    value_box(title = "Competitiveness Grade", value = textOutput("grade")),
+    value_box(title = "General Margin", value = textOutput("general_margin")),
+    value_box(title = "Primary Margin", value = textOutput("primary_margin"))
+  )
 )
