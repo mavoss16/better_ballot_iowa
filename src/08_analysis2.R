@@ -29,6 +29,6 @@ ggplot() +
     plot.title = element_text(color = "black", size = 18, hjust = 0.5),
     plot.title.position = "plot",
     plot.subtitle = element_text(hjust = 0.5, size = 11),
-    legend.position = "right",
+    legend.position = "bottom",
     legend.margin = margin(r = 10)
   )
