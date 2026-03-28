@@ -24,13 +24,13 @@ library(mapview)
 
 
 ```{r}
-sf_data <- read_rds("../clean_data/registrations_sf_summary.rds") |> 
+sf_data <- read_rds("../clean_data/registrations_sf_summary.rds") |>
     select(
-        NAME, 
-        active_pct_2025, active_pct_2015, active_diff,
-        two_party_active_pct_2025, two_party_active_pct_2015, two_party_active_diff,
-        rep_active_pct_2025, rep_active_pct_2015, rep_active_diff,
-        dem_active_pct_2025, dem_active_pct_2015, dem_active_diff
+        NAME,
+        active_pct_2026, active_pct_2015, active_diff,
+        two_party_active_pct_2026, two_party_active_pct_2015, two_party_active_diff,
+        rep_active_pct_2026, rep_active_pct_2015, rep_active_diff,
+        dem_active_pct_2026, dem_active_pct_2015, dem_active_diff
     )
 
 ```
@@ -50,11 +50,11 @@ sf_data <- read_rds("../clean_data/registrations_sf_summary.rds") |>
 
 #### Suffixes:
 
-* 2025: Data from January 2025
+* 2026: Data from January 2026
 
 * 2015: Data from January 2015
 
-* diff: Data from January 2025 minus data from January 2015
+* diff: Data from January 2026 minus data from January 2015
 
 
 ```{r}
@@ -73,20 +73,20 @@ gt(
 ```
 
 
-#### Active Voter Percentages (2025)
+#### Active Voter Percentages (2026)
 
 Click a county to see all of a county's data.
 ```{r}
 
-mapview(sf_data, zcol = "active_pct_2025")
+mapview(sf_data, zcol = "active_pct_2026")
 
-mapview(sf_data, zcol = "two_party_active_pct_2025")
+mapview(sf_data, zcol = "two_party_active_pct_2026")
 ```
 
 
-#### Change in Active % from 2015 to 2025
+#### Change in Active % from 2015 to 2026
 
-Negative values increase a percentage point decrease from 2015 to 2025. Click a county to see all of a county's data.
+Negative values indicate a percentage point decrease from 2015 to 2026. Click a county to see all of a county's data.
 ```{r}
 
 mapview(sf_data, zcol = "active_diff")
