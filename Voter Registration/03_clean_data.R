@@ -8,6 +8,7 @@ library(janitor)
 
 library(tigris)
 library(mapview)
+library(sf)
 
 
 # Read Data --------------------------------------------------------------
@@ -101,7 +102,7 @@ county_active_data <- left_join(latest, earliest, by = "county") |>
 
 # Registration Change Over Time ------------------------------------------
 latest <- data |>
-  filter(year_month == "2025-07") |>
+  filter(year_month == "2026-01") |>
     select(
       county, contains("reg")
     ) |>
@@ -111,7 +112,7 @@ latest <- data |>
   rename_with(ends_with("_pct"), .fn = ~ paste0(.x, "_2025"))
 
 earliest <- data |>
-  filter(year_month == "2014-07") |>
+  filter(year_month == "2015-01") |>
     select(
       county, contains("reg")
     ) |>
@@ -132,16 +133,17 @@ county_sf <- counties(state = "IA")
 
 county_data <- left_join(county_active_data, county_reg_data)
 
-sf_data <- left_join(county_sf, county_data, by = c("NAME" = "county"))
+sf_data <- left_join(county_sf, county_data, by = c("NAME" = "county")) |>
+  st_simplify(preserveTopology = TRUE, dTolerance = 0.003)
 
 
 library(ggplot2)
 
-ggplot(sf_data, aes(fill = active_pct_2025)) +
+ggplot(sf_data, aes(fill = active_pct_2026)) +
   geom_sf() +
   theme_void()
 
-mapview(sf_data, zcol = "active_pct_2025")
+mapview(sf_data, zcol = "active_pct_2026")
 
 
 write_rds(county_sf, "clean_data/ia_counties_sf.rds")
