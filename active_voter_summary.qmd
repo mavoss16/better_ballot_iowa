@@ -15,7 +15,7 @@ library(sf)
 library(dplyr)
 library(reactable)
 library(gt)
-library(mapview)
+library(leaflet)
 
 library(ggplot2)
 library(plotly)
@@ -106,54 +106,119 @@ gt(
 ```
 
 
+```{r}
+make_leaflet_map <- function(data, col, legend_title) {
+    values <- data[[col]]
+    pal <- colorNumeric("viridis", domain = values)
+    labels <- paste0("<b>", data$County, "</b><br>", col, ": ", round(values * 100, 1), "%")
+
+    leaflet(data) |>
+        addProviderTiles("CartoDB.Positron") |>
+        addPolygons(
+            fillColor = pal(values),
+            fillOpacity = 0.7,
+            color = "black",
+            weight = 1,
+            opacity = 1,
+            label = lapply(labels, htmltools::HTML),
+            popup = lapply(labels, htmltools::HTML),
+            highlightOptions = highlightOptions(
+                weight = 3, color = "#666",
+                fillOpacity = 0.9, bringToFront = TRUE
+            )
+        ) |>
+        addLegend(
+            pal = pal,
+            values = values,
+            opacity = 0.85,
+            title = htmltools::HTML(legend_title),
+            labFormat = labelFormat(suffix = "%", transform = function(x) round(x * 100, 1)),
+            position = "bottomright"
+        )
+}
+```
+
+
 #### Active Voter Percentages (2026)
 
-Click a county to see all of a county's data.
+Hover over a county to see its value. Click for details.
 ```{r}
+make_leaflet_map(sf_data, "Active % (Jan 2026)", "Active %<br>(Jan 2026)")
 
-mapview(sf_data, zcol = "Active % (Jan 2026)")
-
-mapview(sf_data, zcol = "Two-Party Active % (Jan 2026)")
+make_leaflet_map(sf_data, "Two-Party Active % (Jan 2026)", "Two-Party Active %<br>(Jan 2026)")
 ```
 
 
 #### Change in Active % from 2015 to 2026
 
-Negative values increase a percentage point decrease from 2015 to 2026. Click a county to see all of a county's data.
+Negative values indicate a percentage point decrease from 2015 to 2026. Hover over a county to see its value. Click for details.
 ```{r}
+make_leaflet_map(sf_data, "Active % Change (2015-2026)", "Active % Change<br>(2015–2026)")
 
-mapview(sf_data, zcol = "Active % Change (2015-2026)")
-
-mapview(sf_data, zcol = "Two-Party Active % Change (2015-2026)")
+make_leaflet_map(sf_data, "Two-Party Active % Change (2015-2026)", "Two-Party Active %<br>Change (2015–2026)")
 ```
 
 
 ```{r}
-filter_select(
-    "var_input",
-    "Select a Variable for the Plot",
-    shared_long_data,
-    ~name,
-    multiple = FALSE
+# Prepare long_data for OJS: apply human-readable labels and keep only pct variables
+plot_data <- long_data |>
+    left_join(var_labels, by = "name") |>
+    mutate(name = coalesce(label, name)) |>
+    select(-label) |>
+    filter(name %in% var_labels$label) |>
+    select(county, year_month, year, month, name, value)
+
+ojs_define(ojs_plot_data = plot_data)
+```
+
+```{ojs}
+plot_data = transpose(ojs_plot_data)
+```
+
+```{ojs}
+viewof selected_var = Inputs.select(
+  [...new Set(plot_data.map(d => d.name))].sort(),
+  { label: "Variable", value: "Active %" }
 )
+```
 
-filter_select(
-    "county_input",
-    "Select one or more Counties for the Plot",
-    shared_long_data,
-    ~county,
-    multiple = TRUE
-)
+```{ojs}
+all_counties = [...new Set(plot_data.map(d => d.county))].sort()
+```
 
-plot <- shared_long_data |>
-    # filter(month = 1) |>
-    ggplot(aes(y = value, x = year_month, group = county)) +
-    geom_line() +
-    theme_minimal()
+```{ojs}
+viewof selected_counties = Inputs.select(all_counties, {
+  label: "Counties",
+  multiple: true,
+  value: ["Polk", "Johnson", "Linn"]
+})
+```
 
-ggplotly(plot)
+```{ojs}
+filtered_plot_data = plot_data
+  .filter(d => d.name === selected_var && selected_counties.includes(d.county))
+  .map(d => ({...d, date: new Date(d.year_month + "-01")}))
+```
 
-# mapview(shared_sf_data, zcol = "value")
+```{ojs}
+Plot.plot({
+  marks: [
+    Plot.line(filtered_plot_data, {x: "date", y: "value", stroke: "county"}),
+    Plot.tip(filtered_plot_data, Plot.pointer({
+      x: "date",
+      y: "value",
+      channels: {
+        County: "county",
+        Date: d => d.year_month,
+        Value: d => (d.value * 100).toFixed(1) + "%"
+      }
+    }))
+  ],
+  x: { label: "Date" },
+  y: { label: selected_var, tickFormat: "%" },
+  color: { legend: true },
+  width: 800
+})
 ```
 
 
