@@ -9,10 +9,11 @@ library(purrr)
 library(tidyxl)
 library(unpivotr)
 
+source("src/00_config.R")
 
-read_data <- function(sheet_name, election_type){
+read_data <- function(sheet_name, election_type, election_year){
   print(sheet_name)
-  cells <- xlsx_cells(paste0("data/election_results/IA_", election_type, "_2024_detail.xlsx"), sheets = sheet_name)
+  cells <- xlsx_cells(results_path(election_type, election_year, "detail.xlsx"), sheets = sheet_name)
   
   data <- behead(cells, direction = "up-left", name = "contest")
   data <- behead(data, direction = "up-left", name = "candidate")
@@ -31,30 +32,29 @@ read_data <- function(sheet_name, election_type){
 
 
 
-# Primary Election --------------------------------------------------------
+# Read each election's detail workbook ------------------------------------
+# One sheet per contest, listed on the "Table of Contents" sheet. Writes
+# IA_<type>_<year>_clean_long.rds; workbooks not downloaded yet are skipped
 
-primary_index <- read_excel("data/election_results/IA_primary_2024_detail.xlsx", sheet = "Table of Contents", skip = 3) |>
-  mutate(Page = as.character(Page))
+read_election <- function(election_type, election_year){
+  detail_path <- results_path(election_type, election_year, "detail.xlsx")
+  if(!file.exists(detail_path)){
+    message("No ", detail_path, " yet; skipping")
+    return(invisible(NULL))
+  }
 
-primary_sheet_list <- primary_index$Page[2:nrow(primary_index)]
+  index <- read_excel(detail_path, sheet = "Table of Contents", skip = 3) |>
+    mutate(Page = as.character(Page))
 
+  sheet_list <- index$Page[2:nrow(index)]
 
-primary_data_list <- map(primary_sheet_list, ~read_data(.x, "primary"))
+  results <- map(sheet_list, ~read_data(.x, election_type, election_year)) |>
+    bind_rows()
 
-all_primary_results <- bind_rows(primary_data_list)
+  write_rds(results, results_path(election_type, election_year, "clean_long.rds"))
+}
 
-write_rds(all_primary_results, "data/election_results/IA_primary_2024_clean_long.rds")
-
-
-# General Election --------------------------------------------------------
-
-general_index <- read_excel("data/election_results/IA_general_2024_detail.xlsx", sheet = "Table of Contents", skip = 3) |>
-  mutate(Page = as.character(Page))
-
-general_sheet_list <- general_index$Page[2:nrow(general_index)]
-
-general_data_list <- map(general_sheet_list, ~read_data(.x, "general"))
-
-all_general_results <- bind_rows(general_data_list)
-
-write_rds(all_general_results, "data/election_results/IA_general_2024_clean_long.rds")
+for(election_year in election_years){
+  read_election("primary", election_year)
+  read_election("general", election_year)
+}

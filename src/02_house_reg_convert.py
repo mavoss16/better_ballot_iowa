@@ -5,13 +5,20 @@ import os
 import glob
 import pandas as pd
 
-# Directory containing the PDF files
-files = glob.glob("/Users/mavos/Documents/GitHub/better_ballot_iowa/data/house_district_reg/pdfs/*/*.pdf", recursive = True)
+# Run from the repository root. PDFs already converted are skipped, so
+# re-running only converts newly downloaded reports
+pdf_dir = os.path.join("data", "house_district_reg", "pdfs")
+csv_dir = os.path.join("data", "house_district_reg", "csvs")
+files = sorted(glob.glob(os.path.join(pdf_dir, "*", "*.pdf")))
 
 
 
 # Loop over all PDF files in the directory
 for pdf_file in files:
+    base_filename = os.path.splitext(os.path.basename(pdf_file))[0]
+    csv_filename = os.path.join(csv_dir, f"{base_filename}.csv")
+    if os.path.exists(csv_filename):
+        continue
     print(pdf_file)
     # Extract tables from the PDF file
     tables = camelot.read_pdf(pdf_file, pages='all')
@@ -34,11 +41,7 @@ for pdf_file in files:
             # Add the rows to the combined list
             combined_rows.extend(rows)
 
-        # Get the base name of the PDF file (without extension)
-        base_filename = os.path.splitext(os.path.basename(pdf_file))[0]
-
-        # Save the combined DataFrame to a single CSV file
-        csv_filename = f'/Users/mavos/Documents/GitHub/better_ballot_iowa/data/house_district_reg/csvs/{base_filename}.csv'
+        # Save the combined rows to a single CSV file
         import csv
         with open(csv_filename, 'w', newline='') as f:
             writer = csv.writer(f)

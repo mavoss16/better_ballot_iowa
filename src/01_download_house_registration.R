@@ -9,7 +9,11 @@ months <- c(
   "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
 )
 
-years <- 2008:2025
+source("src/00_config.R")
+
+# Through the latest election year; months already downloaded are skipped, so
+# re-running only fetches new reports
+years <- 2008:max(election_years)
 
 log <- data.frame(year = numeric(0), month = character(0), status = character(0))
 
@@ -24,6 +28,10 @@ for(year in years){
     
     download_url <- paste0("https://sos.iowa.gov/elections/pdf/VRStatsArchive/", year, "/SH", month, year_substring, ".pdf")
     download_path <- file.path(dir_path, paste0(year, "-", str_pad(month_num, width = 2, side = "left", pad = "0"), ".pdf"))
+    if(file_exists(download_path)){
+      log <- bind_rows(log, data.frame(year = year, month = month, status = "already downloaded", path = download_path))
+      next
+    }
     current_status <- try({
       request(download_url) |>
         req_headers(

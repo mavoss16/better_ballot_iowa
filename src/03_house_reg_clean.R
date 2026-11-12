@@ -7,6 +7,7 @@ library(stringr)
 library(purrr)
 library(janitor)
 
+source("src/00_config.R")
 
 files <- dir_ls("data/house_district_reg/csvs")
 
@@ -35,7 +36,7 @@ data_list <- map(
     }
 )
 
-compare_df_cols(data_list) |> View()
+if(interactive()) View(compare_df_cols(data_list))
 compare_df_cols_same(data_list)
 
 
@@ -74,6 +75,21 @@ data <- data |>
   )
 
 
+# Registration snapshot for each election year (the election month), used by
+# 07_hd_elections.R. Years whose report isn't downloaded yet are skipped
+for(election_year in election_years){
+  snapshot_month <- paste0(election_year, "-", str_pad(reg_month, 2, pad = "0"))
+  snapshot <- data |>
+    filter(year_month == snapshot_month)
+
+  if(nrow(snapshot) == 0){
+    message("No ", snapshot_month, " registration report yet; skipping ", election_year)
+    next
+  }
+  write_rds(snapshot, house_reg_path(election_year))
+}
+
+
 # Active Voter Change Over Time ------------------------------------------
 latest <- data |>
   filter(year_month == "2025-01") |>
@@ -104,8 +120,3 @@ house_dist_active_diff <- left_join(latest, earliest, by = "county") |>
     two_party_active_diff = two_party_active_pct_2025 - two_party_active_pct_2015,
     .after = county
   )
-
-nov_2024 <- data |>
-  filter(year_month == "2024-11")
-
-write_rds(nov_2024, "data/house_district_reg/ia_2024_house_reg.rds")
