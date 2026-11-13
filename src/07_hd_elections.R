@@ -49,10 +49,13 @@ district_registration <- function(election_year, chamber){
       .before = district_num
     ) |>
     rename(reg_total = grand_total) |>
+    # Reports without a party's column (Libertarian since it lost major-party
+    # status: 2022, 2025-) leave it NA; drop those rows rather than classify them
     pivot_longer(
       c(dem_total, rep_total, no_party_total, lib_total, other_total),
       names_to = "party",
-      values_to = "reg_party"
+      values_to = "reg_party",
+      values_drop_na = TRUE
     ) |>
     mutate(
       party = party |> str_remove("_total") |> str_replace_all("_", " ") |> str_to_title()
