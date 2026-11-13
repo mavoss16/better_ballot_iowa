@@ -2,6 +2,7 @@
 
 library(readr)
 library(dplyr)
+library(tidyr)
 library(stringr)
 library(purrr)
 library(janitor)
@@ -149,3 +150,16 @@ mapview(sf_data, zcol = "active_pct_2026")
 write_rds(county_sf, "clean_data/ia_counties_sf.rds")
 write_csv(data, "clean_data/registrations_merged_202405_202603.csv")
 write_rds(sf_data, "clean_data/registrations_sf_summary.rds")
+
+
+# Pivot to Long Format ---------------------------------------------------
+
+registrations_long <- data |>
+  select(-file_path) |>
+  pivot_longer(
+    cols      = -c(county, year_month, year, month, pop_est, adult_pop),
+    names_to  = "name",
+    values_to = "value"
+  )
+
+write_rds(registrations_long, "clean_data/registrations_long.rds")
