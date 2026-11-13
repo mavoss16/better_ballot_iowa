@@ -54,7 +54,7 @@ read_election <- function(election_type, election_year){
   write_rds(results, results_path(election_type, election_year, "clean_long.rds"))
 }
 
-for(election_year in election_years){
+for(election_year in sos_years()){
   read_election("primary", election_year)
   read_election("general", election_year)
 }

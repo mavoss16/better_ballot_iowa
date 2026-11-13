@@ -5,36 +5,7 @@ library(dplyr)
 library(stringr)
 
 source("src/00_config.R")
-
-
-# Margin between the top two candidates in each contest, bucketed
-summarize_margins <- function(results, ...){
-  results |>
-    group_by(contest, race_level, district_num, ...) |>
-    summarize(
-      total_voters = sum(value),
-      first_vote_num = sort(value, TRUE)[1],
-      second_vote_num = sort(value, TRUE)[2],
-      first_vote_pct = sort(vote_pct, TRUE)[1],
-      second_vote_pct = sort(vote_pct, TRUE)[2],
-      first_vote_cand = candidate[which(value == first_vote_num)],
-      first_vote_party = party[which(value == first_vote_num)],
-      second_vote_cand = ifelse(!is.na(second_vote_pct), yes = candidate[which(value == second_vote_num)], no = NA_character_),
-      second_vote_party = ifelse(!is.na(second_vote_pct), yes = party[which(value == second_vote_num)], no = NA_character_)
-    ) |>
-    mutate(
-      margin = first_vote_pct - second_vote_pct,
-      margin_category = case_when(
-        second_vote_cand == "Write-in" ~ "Uncontested",
-        first_vote_cand == "Write-in" ~ "No Candidates",
-        margin <= 0.05 ~ "Less than 5%",
-        margin <= 0.10 ~ "5-10%",
-        margin <= 0.15 ~ "10-15%",
-        margin <= 0.2 ~ "15-20%",
-        margin > 0.2 ~ "20% or more"
-      ) |> factor(levels = c("Less than 5%", "5-10%", "10-15%", "15-20%", "20% or more", "Uncontested", "No Candidates"))
-    )
-}
+source("src/results_helpers.R")
 
 
 # Legislative totals for one election year ---------------------------------
@@ -142,6 +113,6 @@ clean_election_year <- function(election_year){
 }
 
 
-for(election_year in election_years){
+for(election_year in sos_years()){
   clean_election_year(election_year)
 }
